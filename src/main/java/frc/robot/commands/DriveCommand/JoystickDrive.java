@@ -16,6 +16,7 @@ public class JoystickDrive extends Command {
 
     @Override
     protected void execute() {
+        Robot.m_drivetrain.ArcadeDrive(Robot.m_oi.getXboxA1(),Robot.m_oi.getXboxA2(),Robot.m_oi.getXboxBtnAStatus());
     }
 
     @Override
@@ -25,9 +26,11 @@ public class JoystickDrive extends Command {
 
     @Override
     protected void end() {
+        Robot.m_drivetrain.stopMotor();
     }
 
     @Override
     protected void interrupted() {
+        Robot.m_drivetrain.stopMotor();
     }
 }
