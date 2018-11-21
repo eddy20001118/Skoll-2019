@@ -1,11 +1,13 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
+import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.CommandGroup;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.CommandGroups.AutoGroup;
 import frc.robot.CommandGroups.TeleopGroup;
+import frc.robot.commands.DriveCommand.Navigation;
 import frc.robot.subsystems.Drivetrain;
 
 
@@ -15,16 +17,18 @@ public class Robot extends TimedRobot {
 
     private CommandGroup m_teleopgroup = new TeleopGroup();
     private CommandGroup m_autogroup = new AutoGroup();
-
+    private Command m_navigation = new Navigation();
     @Override
     public void robotInit() {
+        m_navigation.setRunWhenDisabled(true);
+        SmartDashboard.putData(m_navigation);
         SmartDashboard.putData(m_autogroup);
         SmartDashboard.putData(m_teleopgroup);
     }
 
     @Override
     public void robotPeriodic() {
-
+        Scheduler.getInstance().run();
     }
 
     @Override
