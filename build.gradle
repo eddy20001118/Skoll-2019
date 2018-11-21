@@ -1,7 +1,7 @@
 plugins {
     id "java"
     id "edu.wpi.first.GradleRIO" version "2019.0.0-alpha-3"
-    
+
 }
 
 def ROBOT_CLASS = "frc.robot.Robot"
@@ -21,6 +21,9 @@ deploy {
 }
 
 repositories {
+    maven {
+        url "http://first.wpi.edu/FRC/roborio/maven/release/"
+    }
     maven {
         url "https://raw.githubusercontent.com/rosjava/rosjava_mvn_repo/master/"
     }
