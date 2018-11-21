@@ -1,0 +1,50 @@
+plugins {
+    id "java"
+    id "edu.wpi.first.GradleRIO" version "2019.0.0-alpha-3"
+    
+}
+
+def ROBOT_CLASS = "frc.robot.Robot"
+
+deploy {
+    targets {
+        target("roborio", edu.wpi.first.gradlerio.frc.RoboRIO) {
+            team = getTeamNumber()
+        }
+    }
+    artifacts {
+        artifact('frcJava', edu.wpi.first.gradlerio.frc.FRCJavaArtifact) {
+            targets << "roborio"
+            debug = getDebugOrDefault(false)
+        }
+    }
+}
+
+repositories {
+    maven {
+        url "https://raw.githubusercontent.com/rosjava/rosjava_mvn_repo/master/"
+    }
+    mavenLocal()
+    jcenter()
+}
+
+dependencies {
+    compile 'org.ros.rosjava_core:rosjava:[0.3,0.4)'
+    compile 'org.ros.rosjava_messages:geometry_msgs:[1.12,1.13)'
+    compile pathfinder()
+    compile wpilib()
+}
+
+jar {
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    manifest edu.wpi.first.gradlerio.GradleRIOPlugin.javaManifest(ROBOT_CLASS)
+}
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+wrapper {
+    gradleVersion = '4.9'
+}
