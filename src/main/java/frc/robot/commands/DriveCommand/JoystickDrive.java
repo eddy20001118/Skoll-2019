@@ -31,6 +31,6 @@ public class JoystickDrive extends Command {
 
     @Override
     protected void interrupted() {
-        Robot.m_drivetrain.stopMotor();
+        end();
     }
 }

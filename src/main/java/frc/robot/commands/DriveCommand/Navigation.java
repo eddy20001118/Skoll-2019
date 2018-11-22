@@ -15,28 +15,36 @@ import org.ros.node.topic.Subscriber;
 public class Navigation extends Command {
     private NodeMainExecutor executor = DefaultNodeMainExecutor.newDefault();
     protected double linearX, angularZ = 0;
-    private class SpeedPublisher extends AbstractNodeMain {
+
+    // add a ros node class contains topic publisher and subscriber
+    private class FRCNode extends AbstractNodeMain {
         private String topic_name;
 
-        public SpeedPublisher() {
-            topic_name = "SpeedPublisher";
+        public FRCNode() {
+            topic_name = "cmd_vel";
         }
 
-        public SpeedPublisher(String topic_name)
+        public FRCNode(String topic_name)
         {
             this.topic_name = topic_name;
         }
 
         @Override
         public GraphName getDefaultNodeName() {
-            return GraphName.of("rosjava/publisher");
+            return GraphName.of("rosjava/frcnode");
         }
 
         @Override
         public void onStart(final ConnectedNode connectedNode) {
+            // add a publisher to publish message
             final Publisher<Twist> publisher =
                     connectedNode.newPublisher(topic_name, Twist._TYPE);
 
+            // add a subscriber to subscribe message
+            final Subscriber<Twist> subscriber =
+                    connectedNode.newSubscriber("cmd_vel",Twist._TYPE);
+
+            // publishing the topic in an cancellable loop
             connectedNode.executeCancellableLoop(new CancellableLoop() {
 
                 @Override
@@ -46,60 +54,39 @@ public class Navigation extends Command {
 
                 @Override
                 protected void loop() throws InterruptedException {
+
                     Twist msg = publisher.newMessage();
                     Vector3 linear = msg.getLinear();
                     Vector3 angular = msg.getAngular();
-                    linear.setX(10);
-                    angular.setZ(3);
+                    linear.setX(8);
+                    angular.setZ(2);
                     msg.setLinear(linear);
                     msg.setAngular(angular);
                     publisher.publish(msg);
                     Thread.sleep(400);
                 }
             });
-        }
-    }
-    private class SpeedSubscriber extends AbstractNodeMain {
-        private String topic_name, listened_topic;
 
-        public SpeedSubscriber() {
-            topic_name = "DefalutSubscriber";
-        }
-
-        public SpeedSubscriber(String topic_name, String listened_topic) {
-            this.topic_name = topic_name;
-            this.listened_topic = listened_topic;
-        }
-
-        @Override
-        public GraphName getDefaultNodeName() {
-            return GraphName.of("rosjava/subscriber");
-        }
-
-        @Override
-        public void onStart(final ConnectedNode connectedNode) {
-            Subscriber<Twist> subscriber = connectedNode.newSubscriber(listened_topic, Twist._TYPE);
+            // listen to the topic you want
             subscriber.addMessageListener(message -> {
                 linearX = message.getLinear().getX();
                 angularZ = message.getAngular().getZ();
             });
-
         }
     }
 
-    private SpeedSubscriber subscriber;
-    private SpeedPublisher publisher;
+    private FRCNode RosFRCHandler;
     public Navigation() {
-        publisher = new SpeedPublisher("cmd_vel");
-        subscriber = new SpeedSubscriber("frcNavigation","cmd_vel");
+        RosFRCHandler = new FRCNode("cmd_vel");
         requires(Robot.m_drivetrain);
     }
 
 
     @Override
     public void initialize() {
-        executor.execute(publisher,NodeConfiguration.newPublic("localhost",RobotMap.ROSMASTER));
-        executor.execute(subscriber, NodeConfiguration.newPublic("localhost", RobotMap.ROSMASTER));
+        //ros node will be executed here
+        executor.execute(
+                RosFRCHandler,NodeConfiguration.newPublic("localhost",RobotMap.ROSMASTER));
     }
 
     @Override
@@ -111,16 +98,20 @@ public class Navigation extends Command {
 
     @Override
     public boolean isFinished() {
+        //TODO
+        //subscribe isFinished from ros
         return false;
     }
 
     @Override
     public void end() {
+        linearX=0;
+        angularZ=0;
         Robot.m_drivetrain.stopMotor();
     }
 
     @Override
     public void interrupted() {
-        Robot.m_drivetrain.stopMotor();
+        end();
     }
 }
