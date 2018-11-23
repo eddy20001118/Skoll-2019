@@ -93,7 +93,12 @@ public class ROSFRC {
     }
 
     public void executeNode() {
+        try {
         executor.execute(frcNode, NodeConfiguration.newPublic("localhost", RobotMap.ROSMASTER));
+        } catch (Exception e){
+            System.out.println("Cannot connect with ros master");
+            System.out.println(e);
+        }
     }
 
     public double getLinearX() {
@@ -107,7 +112,12 @@ public class ROSFRC {
     }
 
     public void shutdownNode() {
+        try{
         executor.shutdownNodeMain(frcNode); // shutdown the node will run onShutdown()
+        } catch (Exception e){
+            System.out.println("Cannot shutdown ros node");
+            System.out.println(e);
+        }
         SmartDashboard.putNumber("linearX", linearX);
         SmartDashboard.putNumber("AngularZ", angularZ);
     }
