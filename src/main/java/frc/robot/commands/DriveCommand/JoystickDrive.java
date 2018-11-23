@@ -13,11 +13,12 @@ public class JoystickDrive extends Command {
 
     @Override
     protected void initialize() {
+        SmartDashboard.putBoolean("Drivetrain reverted", Robot.m_oi.getXboxBtnAStatus());
     }
 
     @Override
     protected void execute() {
-        SmartDashboard.putBoolean("Button Status", Robot.m_oi.getXboxBtnAStatus());
+        SmartDashboard.putBoolean("Drivetrain reverted", Robot.m_oi.getXboxBtnAStatus());
         Robot.m_drivetrain.ArcadeDrive(Robot.m_oi.getXboxA1(), Robot.m_oi.getXboxA2(), Robot.m_oi.getXboxBtnAStatus());
     }
 
