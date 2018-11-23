@@ -14,7 +14,9 @@ Shuffleboard is a useful tool in FRC competition used to visualize your code(dis
 ## Choosing a way to transmit data
 As I mentioned above, there are actually two ways to transmit data between ros master, roborio, driverstation computer. If you want to transmit the data that required high real-time level, such as "drivetrain speed" published in "cmd_vel" topic, you need to subscribe them on roborio by using rosjava subscriber, this method allows roborio and ros master to connect directly through radio (OM5P-AC router), because Networktable server is usually running on driverstation computer and may cause delay in the competition. If you just want to transmit data about robot/ros master status data, you can directly send it by using networktable in ros.
 
-![image](https://github.com/eddy20001118/Skoll-2019/blob/master/Roborio-ROS-NetworkTable.png)
+<div align="center"> 
+    <img src="https://github.com/eddy20001118/Skoll-2019/blob/master/Roborio-ROS-NetworkTable.png"/>
+</div>
 
 ### For C++ ROS Node
 If you wish to use C++ to programme in ros, please refer [here](https://github.com/eddy20001118/ROS-networktable) to explore an example C++ NetworkTable client in ROS Node.
