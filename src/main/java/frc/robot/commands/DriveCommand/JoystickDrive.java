@@ -1,11 +1,12 @@
 package frc.robot.commands.DriveCommand;
 
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.Robot;
 
 public class JoystickDrive extends Command {
-
     public JoystickDrive() {
+
         requires(Robot.m_drivetrain);
     }
 
@@ -16,7 +17,8 @@ public class JoystickDrive extends Command {
 
     @Override
     protected void execute() {
-        Robot.m_drivetrain.ArcadeDrive(Robot.m_oi.getXboxA1(),Robot.m_oi.getXboxA2(),Robot.m_oi.getXboxBtnAStatus());
+        SmartDashboard.putBoolean("Button Status", Robot.m_oi.getXboxBtnAStatus());
+        Robot.m_drivetrain.ArcadeDrive(Robot.m_oi.getXboxA1(), Robot.m_oi.getXboxA2(), Robot.m_oi.getXboxBtnAStatus());
     }
 
     @Override

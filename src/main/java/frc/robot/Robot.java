@@ -20,7 +20,8 @@ public class Robot extends TimedRobot {
     private Command m_navigation = new Navigation();
     @Override
     public void robotInit() {
-        m_navigation.setRunWhenDisabled(true);
+        m_autogroup.setRunWhenDisabled(true);
+        m_teleopgroup.setRunWhenDisabled(true);
         SmartDashboard.putData(m_navigation);
         SmartDashboard.putData(m_autogroup);
         SmartDashboard.putData(m_teleopgroup);

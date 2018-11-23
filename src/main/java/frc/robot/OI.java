@@ -3,10 +3,9 @@ package frc.robot;
 import edu.wpi.first.wpilibj.Joystick;
 
 public class OI {
-    Joystick xbox;
-    Joystick logi;
-
-    public OI() {
+    private Joystick xbox;
+    private Joystick logi;
+    OI() {
         xbox = new Joystick(RobotMap.xboxchannel);
         logi = new Joystick(RobotMap.logichannel);
     }

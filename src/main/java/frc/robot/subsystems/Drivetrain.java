@@ -5,6 +5,7 @@ import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.RobotMap;
 import frc.robot.commands.DriveCommand.JoystickDrive;
 
@@ -20,10 +21,11 @@ public class Drivetrain extends Subsystem {
     private DifferentialDrive m_drivetrain =
             new DifferentialDrive(m_leftcontroller, m_rightcontroller);
 
-    public Drivetrain(){
+    public Drivetrain() {
         m_drivetrain.setSafetyEnabled(false);
-        m_drivetrain.setMaxOutput(0.8);
+        m_drivetrain.setMaxOutput(1);
     }
+
     @Override
     public void initDefaultCommand() {
         setDefaultCommand(new JoystickDrive());
@@ -32,11 +34,12 @@ public class Drivetrain extends Subsystem {
     public void ArcadeDrive(double linearX, double AngularZ, boolean isRevert) {
         //TODO
         //velocity and acceleration need limited here
-
-        if (isRevert)
-            m_drivetrain.tankDrive(-(linearX+AngularZ), -(linearX-AngularZ));
-        else
-            m_drivetrain.tankDrive(linearX+AngularZ, linearX-AngularZ);
+        //find out the scale of speed output that tankDrive make
+        if (isRevert) {
+            m_drivetrain.tankDrive(-(linearX + AngularZ), -(linearX - AngularZ));
+        } else {
+            m_drivetrain.tankDrive(linearX + AngularZ, linearX - AngularZ);
+        }
     }
 
     public void stopMotor() {
