@@ -1,5 +1,7 @@
 package frc.robot;
 
+import edu.wpi.first.wpilibj.SPI;
+
 import java.net.URI;
 
 
@@ -12,4 +14,5 @@ public class RobotMap {
     public final static int xboxchannel = 0, logichannel = 1;
     public final static int xboxA1 = 1, xboxA2 = 2, xboxX1 = 3, xboxLeft1 = 5,
             xboxRight1 = 6, xboxBack1 = 7, xboxStart1 =8;
+    public final static SPI.Port gyroChannel = SPI.Port.kOnboardCS0;
 }
