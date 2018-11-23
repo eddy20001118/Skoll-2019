@@ -83,7 +83,7 @@
             "content": {
               "_type": "ComboBox Chooser",
               "_source0": "network_table:///SmartDashboard/Chooser",
-              "_title": "SmartDashboard/Chooser"
+              "_title": "/SmartDashboard/Chooser"
             }
           },
           "2,3": {
@@ -94,7 +94,7 @@
             "content": {
               "_type": "Boolean Box",
               "_source0": "network_table:///SmartDashboard/Drivetrain reverted",
-              "_title": "SmartDashboard/Drivetrain reverted",
+              "_title": "/SmartDashboard/Drivetrain reverted",
               "colorWhenTrue": "#7CFC00FF",
               "colorWhenFalse": "#8B0000FF"
             }
