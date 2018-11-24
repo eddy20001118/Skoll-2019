@@ -4,13 +4,12 @@ import edu.wpi.first.wpilibj.ADXRS450_Gyro;
 import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.Talon;
-import edu.wpi.first.wpilibj.command.PIDSubsystem;
+import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.RobotMap;
 import frc.robot.commands.DriveCommand.JoystickDrive;
 
-public class Drivetrain extends PIDSubsystem {
+public class Drivetrain extends Subsystem {
     private SpeedController m_leftfront = new Talon(RobotMap.leftfront),
             m_leftrear = new Talon(RobotMap.leftrear),
             m_rightfront = new Talon(RobotMap.rightfront),
@@ -24,7 +23,6 @@ public class Drivetrain extends PIDSubsystem {
     private ADXRS450_Gyro gyro;
 
     public Drivetrain() {
-        super(1, 0, 0);
         gyro = new ADXRS450_Gyro(RobotMap.gyroChannel);
         m_drivetrain.setSafetyEnabled(false);
         m_drivetrain.setMaxOutput(1);
@@ -38,11 +36,10 @@ public class Drivetrain extends PIDSubsystem {
     public void ArcadeDrive(double linearX, double AngularZ, boolean isRevert) {
         //TODO
         //velocity and acceleration need limited here
-        //find out the scale of speed output that tankDrive make
         if (isRevert) {
-            m_drivetrain.tankDrive(-(linearX + AngularZ), -(linearX - AngularZ),false);
+            m_drivetrain.tankDrive(-(linearX + AngularZ), -(linearX - AngularZ), false);
         } else {
-            m_drivetrain.tankDrive(linearX + AngularZ, linearX - AngularZ,false);
+            m_drivetrain.tankDrive(linearX + AngularZ, linearX - AngularZ, false);
         }
     }
 
@@ -58,14 +55,32 @@ public class Drivetrain extends PIDSubsystem {
         m_drivetrain.stopMotor();
     }
 
-    @Override
-    protected double returnPIDInput() {
-        return gyro.getAngle();
+    public double getHeading() {
+        double angle = gyro.getAngle() % 360;
+        return angle < 0 ? 360 + angle : angle;
     }
 
-    @Override
-    protected void usePIDOutput(double output) {
-        SmartDashboard.putNumber("output",output);
-        TankDrive(-output, output, false);
+    public void resetHeading() {
+        gyro.reset();
+    }
+
+    public void resetEncoders()
+    {
+        //TODO
+        //Complete this method to reset encoders positions
+    }
+
+    public static double ConvertInchestoEncoderCount(double inches)
+    {
+        //TODO
+        //Indicate the correct coefficient to inches
+        return inches * 508;
+    }
+
+
+    public double getAverageEncoderPosition(){
+        //TODO
+        //Complete this return method with reading from encoders
+        return 0.0;
     }
 }

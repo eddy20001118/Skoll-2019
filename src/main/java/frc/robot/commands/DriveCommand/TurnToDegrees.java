@@ -1,38 +1,55 @@
 package frc.robot.commands.DriveCommand;
 
+import edu.wpi.first.wpilibj.PIDController;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import frc.robot.PID.PIDOutputs.PIDOutputImpl;
+import frc.robot.PID.PIDSources.GyroInput;
 import frc.robot.Robot;
 
 public class TurnToDegrees extends Command {
-    private double setpoint;
+    private double TargetAngle;
+    private PIDOutputImpl rotationPIDOutput = new PIDOutputImpl();
+    private PIDController anglePIDController = null;
+
+    private PIDController createAnglePIDController() {
+        PIDController newPIDController = new PIDController(.03, .01, .01, new GyroInput(), rotationPIDOutput);
+
+        newPIDController.setInputRange(0, 360);
+        newPIDController.setOutputRange(-0.5, 0.5);
+        newPIDController.setSetpoint(TargetAngle);
+        newPIDController.setAbsoluteTolerance(0.01);
+        newPIDController.setContinuous();
+        newPIDController.enable();
+        SmartDashboard.putData("Gyro2", newPIDController);
+        return newPIDController;
+    }
+
     public TurnToDegrees(double TargetAngle) {
         requires(Robot.m_drivetrain);
-        setpoint = TargetAngle;
+        this.TargetAngle = TargetAngle;
     }
 
     @Override
     protected void initialize() {
-        Robot.m_drivetrain.setSetpoint(setpoint);
-        Robot.m_drivetrain.setAbsoluteTolerance(2.0);
-        Robot.m_drivetrain.setInputRange(-180.0,180.0);
-        Robot.m_drivetrain.setOutputRange(-0.5,0.5);
-        Robot.m_drivetrain.enable();
-        SmartDashboard.putData("DriveTrainPID",Robot.m_drivetrain.getPIDController());
+        anglePIDController = createAnglePIDController();
     }
 
     @Override
     protected void execute() {
+        Robot.m_drivetrain.ArcadeDrive(0.0, rotationPIDOutput.getValue(), false);
     }
 
     @Override
     protected boolean isFinished() {
-        return Math.abs(Robot.m_drivetrain.getPosition() - setpoint) < 2.0;
+        return anglePIDController.onTarget() && anglePIDController.isEnabled();
     }
 
     @Override
     protected void end() {
-        Robot.m_drivetrain.disable();
+        anglePIDController.disable();
+        anglePIDController.free();
+        Robot.m_drivetrain.stopMotor();
     }
 
     @Override
