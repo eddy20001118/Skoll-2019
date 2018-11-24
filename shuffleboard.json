@@ -1,5 +1,5 @@
 {
-  "dividerPosition": 0.2586538461538462,
+  "dividerPosition": 0.25842696629213485,
   "tabPane": [
     {
       "title": "Tab 1",
@@ -37,17 +37,6 @@
               "minValue": -1.0,
               "maxValue": 1.0,
               "valueVisible": true
-            }
-          },
-          "4,1": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Command",
-              "_source0": "network_table:///SmartDashboard/AutoGroup",
-              "_title": "SmartDashboard/AutoGroup"
             }
           },
           "4,0": {
@@ -97,6 +86,17 @@
               "_title": "/SmartDashboard/Drivetrain reverted",
               "colorWhenTrue": "#7CFC00FF",
               "colorWhenFalse": "#8B0000FF"
+            }
+          },
+          "4,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/AutoGroup",
+              "_title": "SmartDashboard/AutoGroup"
             }
           }
         }

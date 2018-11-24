@@ -6,7 +6,7 @@ import frc.robot.commands.DriveCommand.TurnToDegrees;
 
 public class AutoGroup extends CommandGroup {
     public AutoGroup(){
-        addSequential(new TurnToDegrees(90));
-//        addSequential(new Navigation());
+//        addSequential(new TurnToDegrees(90));
+        addSequential(new Navigation());
     }
 }
