@@ -8,7 +8,7 @@ import org.ros.node.ConnectedNode;
 
 /*The publisher class needs to extend from a template class called TP_Publisher.
  * This process will simplified publishing data as much as possible.
- * Please refer the example below*/
+ * Please refer  tothe example below*/
 public class SpeedPublisher extends TP_Publisher {
     private Twist twist;
     private Vector3 linear, angular;
@@ -22,8 +22,8 @@ public class SpeedPublisher extends TP_Publisher {
         twist = (Twist) getMessage();
         linear = twist.getLinear();
         angular = twist.getAngular();
-        linear.setX(4);
-        angular.setZ(3);
+        linear.setX(0.5);
+        angular.setZ(0.2);
         twist.setLinear(linear);
         twist.setAngular(angular);
         Timer.delay(0.5);

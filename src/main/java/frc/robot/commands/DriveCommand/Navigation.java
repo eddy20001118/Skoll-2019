@@ -1,26 +1,25 @@
 package frc.robot.commands.DriveCommand;
 
 import edu.wpi.first.wpilibj.command.Command;
-import frc.robot.ROS.Executor;
-import frc.robot.ROS.Nodes.MainNode;
+import frc.robot.ROS.MainExecutor;
 import frc.robot.Robot;
 
 public class Navigation extends Command {
-    private Executor executor;
+    private MainExecutor mainExecutor;
     public Navigation() {
-        executor = new Executor(new MainNode("mainNode"));
+        mainExecutor = new MainExecutor();
         requires(Robot.m_drivetrain);
     }
 
 
     @Override
     public void initialize() {
-        executor.excuteNode();
+        mainExecutor.executeNode();
     }
 
     @Override
     public void execute() {
-//        Robot.m_drivetrain.ArcadeDrive(rosfrc.getLinearX(), rosfrc.getAngularZ(), false);
+        Robot.m_drivetrain.ArcadeDrive(mainExecutor.subscriberNodes.getLinearX(),mainExecutor.subscriberNodes.getAngularZ(), false);
     }
 
     @Override
@@ -32,7 +31,7 @@ public class Navigation extends Command {
 
     @Override
     public void end() {
-        executor.shutdownNode();
+        mainExecutor.shutdownNode();
         Robot.m_drivetrain.stopMotor();
     }
 

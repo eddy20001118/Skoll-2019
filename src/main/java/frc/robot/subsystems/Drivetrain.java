@@ -40,9 +40,9 @@ public class Drivetrain extends PIDSubsystem {
         //velocity and acceleration need limited here
         //find out the scale of speed output that tankDrive make
         if (isRevert) {
-            m_drivetrain.tankDrive(-(linearX + AngularZ), -(linearX - AngularZ));
+            m_drivetrain.tankDrive(-(linearX + AngularZ), -(linearX - AngularZ),false);
         } else {
-            m_drivetrain.tankDrive(linearX + AngularZ, linearX - AngularZ);
+            m_drivetrain.tankDrive(linearX + AngularZ, linearX - AngularZ,false);
         }
     }
 
