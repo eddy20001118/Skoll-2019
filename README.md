@@ -1,5 +1,5 @@
 # FRC Skoll-2019 project
-This is Skoll-2019 project using ROS to help navigate in autonomous period. This project only aims to be deployed on roborio and all ROS navigation packages(code) is not uploaded yet. In this project, rosjava is used for creating a communication between roborio and ROS master(running on raspberry pi or jetson). "ROSFRC.java" in "ROS" folder contains a example ROS node and executor. If you want to explore how to use this file, go to "Navigation.java" in "commands/DriveCommand" folder, this will give you a brief example. 
+This is Skoll-2019 project using ROS to help navigate in autonomous period. This project only aims to be deployed on roborio. All ROS navigation packages(code) are not uploaded yet, I will create a new repository to show them later this year. In this project, rosjava is used for creating a communication between Roborio and ROS(typically running on raspberry pi or jetson). In "ROS" folder, explore the source code through the order: *executor - node(-template file) - publisher(-template file)/subscriber.* If you want to explore how to use this class, go to "Navigation.java" in "commands/DriveCommand" folder, this will give you a brief example. 
 
 
 It is important to aware that:
