@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="93052a2c-0ed6-4d47-94f6-9925a827be3f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/OI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/OI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -97,11 +96,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/OI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+            <state relative-caret-position="1395">
+              <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="558">
+                <caret line="18" column="159" lean-forward="true" selection-start-line="18" selection-start-column="159" selection-end-line="18" selection-end-column="159" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -109,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="403">
               <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -234,6 +245,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,14 +349,31 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="robot" type="462c0819:PsiDirectoryNode" />
+              <item name="ROS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="robot" type="462c0819:PsiDirectoryNode" />
+              <item name="ROS" type="462c0819:PsiDirectoryNode" />
+              <item name="Nodes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="robot" type="462c0819:PsiDirectoryNode" />
               <item name="subsystems" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -354,7 +384,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -368,7 +398,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Skoll-2019 [jar]">
+  <component name="RunManager" selected="Batch.gradlerio_simulateJar">
     <configuration name="gradlerio_simulateJar" type="BatchConfigurationType" factoryName="Batch" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\yuhao_li\OneDrive - Durham University\Programming Projects\FRC\Skoll-2019\build" />
@@ -443,8 +473,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Batch.gradlerio_simulateJar" />
-        <item itemvalue="Gradle.Skoll-2019 [jar]" />
         <item itemvalue="Batch.runShuffleBoard" />
+        <item itemvalue="Gradle.Skoll-2019 [jar]" />
         <item itemvalue="Gradle.Skoll-2019 [wpi]" />
         <item itemvalue="Batch.runCmder" />
       </list>
@@ -470,7 +500,8 @@
       <workItem from="1543065708685" duration="14241000" />
       <workItem from="1543104695473" duration="56000" />
       <workItem from="1543104804904" duration="6059000" />
-      <workItem from="1543145224789" duration="361000" />
+      <workItem from="1543145224789" duration="1076000" />
+      <workItem from="1543165850802" duration="535000" />
     </task>
     <task id="LOCAL-00001" summary="add pid subsystem support">
       <created>1543015363636</created>
@@ -514,11 +545,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543110916127</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix bugs">
+      <created>1543145621413</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543145621413</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43284000" />
+    <option name="totallyTimeSpent" value="44534000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,7 +571,7 @@
     <frame x="-11" y="-11" width="2182" height="1402" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.22753346" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.23087955" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.23326287" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -662,7 +700,8 @@
     <MESSAGE value="Tested publisher and subscriber nodes" />
     <MESSAGE value="add two pid drive commands" />
     <MESSAGE value="add a pid command for upper motor. Optimize shuffleboard display." />
-    <option name="LAST_COMMIT_MESSAGE" value="add a pid command for upper motor. Optimize shuffleboard display." />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -754,16 +793,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/ROS/RosTemplate/TP_Node.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="589">
-            <caret line="19" selection-start-line="19" selection-end-line="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="837">
@@ -967,6 +996,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -998,20 +1037,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/OI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1395">
+          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/OI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="558">
+            <caret line="18" column="159" lean-forward="true" selection-start-line="18" selection-start-column="159" selection-end-line="18" selection-end-column="159" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
