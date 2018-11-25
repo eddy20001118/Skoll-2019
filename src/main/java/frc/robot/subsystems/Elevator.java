@@ -8,7 +8,7 @@ public class Elevator extends Subsystem {
     private Talon elevator = new Talon(RobotMap.elevator);
 
     public Elevator() {
-        elevator.setSafetyEnabled(true);
+        elevator.setSafetyEnabled(false);
         elevator.setInverted(true);
     }
 

@@ -19,6 +19,8 @@ public class JoystickDrive extends Command {
     @Override
     protected void execute() {
         SmartDashboard.putBoolean("Drivetrain reverted", Robot.m_oi.getXboxBtnAStatus());
+        SmartDashboard.putNumber("linearX", Robot.m_oi.getXboxA1());
+        SmartDashboard.putNumber("AngularZ", Robot.m_oi.getXboxA2());
         Robot.m_drivetrain.ArcadeDrive(Robot.m_oi.getXboxA1(), Robot.m_oi.getXboxA2(), Robot.m_oi.getXboxBtnAStatus());
     }
 

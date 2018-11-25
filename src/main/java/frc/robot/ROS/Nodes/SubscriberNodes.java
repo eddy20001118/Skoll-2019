@@ -40,12 +40,10 @@ public class SubscriberNodes extends AbstractNodeMain {
     }
 
     public double getLinearX() {
-        SmartDashboard.putNumber("linearX", linearX);
         return linearX;
     }
 
     public double getAngularZ() {
-        SmartDashboard.putNumber("AngularZ", angularZ);
         return angularZ;
     }
 }

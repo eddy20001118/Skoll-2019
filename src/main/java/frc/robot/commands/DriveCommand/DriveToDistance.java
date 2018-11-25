@@ -56,6 +56,8 @@ public class DriveToDistance extends Command {
 
     @Override
     protected void execute() {
+        SmartDashboard.putNumber("linearX", speedPIDOutput.getValue());
+        SmartDashboard.putNumber("AngularZ", rotationPIDOutput.getValue());
         Robot.m_drivetrain.ArcadeDrive(speedPIDOutput.getValue(), rotationPIDOutput.getValue(), false);
     }
 
@@ -68,8 +70,8 @@ public class DriveToDistance extends Command {
     protected void end() {
         encoderPIDController.disable();
         anglePIDController.disable();
-        encoderPIDController.free();
-        anglePIDController.free();
+        encoderPIDController.reset();
+        anglePIDController.reset();
         Robot.m_drivetrain.stopMotor();
     }
 

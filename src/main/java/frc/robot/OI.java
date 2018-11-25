@@ -1,14 +1,17 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 
 public class OI {
     private Joystick xbox;
     private Joystick logi;
     private Button buttonA1, buttonB1, buttonX1, buttonY1, buttonLeft1, buttonRight1, buttonBack1, buttonStart1;
+    private int ClickCount = 0;
 
     OI() {
         xbox = new Joystick(RobotMap.xboxchannel);
@@ -44,17 +47,20 @@ public class OI {
     }
 
     public double getXboxA3() {
-        return xbox.getRawAxis(4);
+        return 100 - xbox.getRawAxis(4) * 100;
     }
 
     public boolean getXboxBtnAStatus() {
         //TODO
         //needs to return button status
 
-        int ClickCount = 0;
-        if (xbox.getRawButtonPressed(RobotMap.xboxA1)) {
-            ClickCount++;
+        if (xbox.getRawButton(RobotMap.xboxA1)) {
+            Timer.delay(0.02);
+            if (!xbox.getRawButton(RobotMap.xboxA1)) {
+                ClickCount++;
+            }
         }
+        SmartDashboard.putNumber("click", ClickCount);
         return ClickCount % 2 != 0;
     }
 }

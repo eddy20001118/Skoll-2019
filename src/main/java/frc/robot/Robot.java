@@ -46,9 +46,9 @@ public class Robot extends TimedRobot {
         m_joystickdrive.setRunWhenDisabled(true);
         /*Remember to delete these when deploy to roborio*/
 
-        sendableChooser.addDefault("Case1", AutonomousMode.Case1);
-        sendableChooser.addObject("Case2", AutonomousMode.Case2);
-        sendableChooser.addObject("Case3", AutonomousMode.Case3);
+        sendableChooser.setDefaultOption("Case1", AutonomousMode.Case1);
+        sendableChooser.addOption("Case2", AutonomousMode.Case2);
+        sendableChooser.addOption("Case3", AutonomousMode.Case3);
 
         /*Add Sendable widgets*/
         SmartDashboard.putData("Chooser", sendableChooser);

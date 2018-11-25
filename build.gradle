@@ -1,8 +1,21 @@
 plugins {
     id "java"
-    id "edu.wpi.first.GradleRIO" version "2019.0.0-alpha-3"
-
+    id "edu.wpi.first.GradleRIO" version "2019.1.1-beta-1"
+    id "com.snobot.simulator.plugin.SnobotSimulatorPlugin" version "2019-0.0.0" apply false
 }
+repositories {
+    maven {
+        url "http://first.wpi.edu/FRC/roborio/maven/release/"
+    }
+    maven {
+        url "https://raw.githubusercontent.com/rosjava/rosjava_mvn_repo/master/"
+    }
+    mavenLocal()
+    jcenter()
+}
+
+apply plugin: com.snobot.simulator.plugin.SnobotSimulatorPlugin
+
 
 def ROBOT_CLASS = "frc.robot.Robot"
 
@@ -20,23 +33,18 @@ deploy {
     }
 }
 
-repositories {
-    maven {
-        url "http://first.wpi.edu/FRC/roborio/maven/release/"
-    }
-    maven {
-        url "https://raw.githubusercontent.com/rosjava/rosjava_mvn_repo/master/"
-    }
-    mavenLocal()
-    jcenter()
+// SnobotSim
+configurations {
+    snobotSimCompile
 }
 
 dependencies {
     compile 'org.ros.rosjava_core:rosjava:[0.3,0.4)'
     compile 'org.ros.rosjava_messages:geometry_msgs:[1.12,1.13)'
     compile 'org.ros.rosjava_messages:sensor_msgs:[1.12.5,1.12.6)'
-    compile pathfinder()
     compile wpilib()
+    snobotSimCompile snobotSimJava()
+
 }
 
 jar {

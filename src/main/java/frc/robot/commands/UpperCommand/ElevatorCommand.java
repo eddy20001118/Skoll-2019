@@ -52,7 +52,7 @@ public class ElevatorCommand extends Command {
     @Override
     protected void end() {
         encoderPIDController.disable();
-        encoderPIDController.free();
+        encoderPIDController.reset();
         Robot.m_elevator.stopElevator();
     }
 

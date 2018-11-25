@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93052a2c-0ed6-4d47-94f6-9925a827be3f" name="Default Changelist" comment="">
+    <list default="true" id="93052a2c-0ed6-4d47-94f6-9925a827be3f" name="Default Changelist" comment="test with 2019 libs">
+      <change afterPath="$PROJECT_DIR$/simulator_config/joystick_config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator_config/simulator_config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator_config/simulator_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shuffleboard.json" beforeDir="false" afterPath="$PROJECT_DIR$/shuffleboard.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/OI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/OI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/SubscriberNodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/SubscriberNodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/JoystickDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/JoystickDrive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/Navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/Navigation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Elevator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Elevator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -66,7 +78,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Skoll-2019" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="gradlerio" type="c8890929:TasksNode$1" />
+                <item name="snobotsimulator" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Skoll-2019" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -79,73 +96,21 @@
     <favorites_list name="Skoll-2019" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Elevator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/AutoGroup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="248">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/OI.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/TeleopGroup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1395">
-              <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="558">
-                <caret line="18" column="159" lean-forward="true" selection-start-line="18" selection-start-column="159" selection-end-line="18" selection-end-column="159" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/Navigation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1023">
-              <caret line="37" column="13" selection-start-line="7" selection-start-column="4" selection-end-line="37" selection-end-column="13" />
+            <state relative-caret-position="217">
+              <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -153,17 +118,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/JoystickDrive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="20" column="89" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="89" />
+            <state relative-caret-position="527">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="22" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/Robot.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/Navigation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1457">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="-64">
+              <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,6 +156,24 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="wpi2019" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -199,26 +194,29 @@
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Subscribers/SpeedSubscriber.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Executor.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/FRCNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/SubscriberNodes.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/PublisherNodes.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/ROSFRC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/Navigation.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/PIDOutputImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDOutputs/PIDOutputImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/DriveTrainEncodersInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/GyroInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drivetrain.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/AutoGroup.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/UpperCommand/Elevator.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/TeleopGroup.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/ElevatorEncoderInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Elevator.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/UpperCommand/ElevatorCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/Robot.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/simulator_config/simulator_config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/SubscriberNodes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/Navigation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/JoystickDrive.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/OI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Elevator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java" />
       </list>
     </option>
   </component>
@@ -253,11 +251,6 @@
             <path>
               <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
@@ -381,10 +374,11 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543000039656" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -398,24 +392,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Batch.gradlerio_simulateJar">
+  <component name="RunManager" selected="Gradle.Skoll-2019 [runJavaSnobotSim]">
     <configuration name="gradlerio_simulateJar" type="BatchConfigurationType" factoryName="Batch" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\yuhao_li\OneDrive - Durham University\Programming Projects\FRC\Skoll-2019\build" />
       <option name="PARENT_ENVS" value="true" />
       <module name="" />
       <option name="SCRIPT_NAME" value="gradlerio_simulateJar.bat" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="runCmder" type="BatchConfigurationType" factoryName="Batch" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\yuhao_li\OneDrive - Durham University\Programming Projects\FRC\Skoll-2019\build" />
-      <option name="PARENT_ENVS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="runCmder.cmd" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -431,6 +414,25 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Skoll-2019 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="Skoll-2019 [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -451,7 +453,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Skoll-2019 [wpi]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Skoll-2019 [runJavaSnobotSim]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -462,7 +464,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="wpi" />
+            <option value="runJavaSnobotSim" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -472,11 +474,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Skoll-2019 [runJavaSnobotSim]" />
         <item itemvalue="Batch.gradlerio_simulateJar" />
         <item itemvalue="Batch.runShuffleBoard" />
+        <item itemvalue="Gradle.Skoll-2019 [build]" />
         <item itemvalue="Gradle.Skoll-2019 [jar]" />
-        <item itemvalue="Gradle.Skoll-2019 [wpi]" />
-        <item itemvalue="Batch.runCmder" />
       </list>
     </recent_temporary>
   </component>
@@ -501,7 +503,8 @@
       <workItem from="1543104695473" duration="56000" />
       <workItem from="1543104804904" duration="6059000" />
       <workItem from="1543145224789" duration="1076000" />
-      <workItem from="1543165850802" duration="535000" />
+      <workItem from="1543165850802" duration="3075000" />
+      <workItem from="1543174511086" duration="3652000" />
     </task>
     <task id="LOCAL-00001" summary="add pid subsystem support">
       <created>1543015363636</created>
@@ -552,11 +555,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543145621413</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update README.md">
+      <created>1543166538792</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543166538792</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44534000" />
+    <option name="totallyTimeSpent" value="50726000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -571,7 +581,40 @@
     <frame x="-11" y="-11" width="2182" height="1402" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.23087955" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976852" visible="true" weight="0.23804972" />
+      <window_info id="Structure" order="1" sideWeight="0.5023148" side_tool="true" weight="0.23804972" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5030157" side_tool="true" weight="0.23804972" />
+      <window_info id="Gradle" order="7" weight="0.2375717" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928804" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30097088" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.499522" weight="0.32847896" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32847896" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.499522" weight="0.32847896" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500478" side_tool="true" weight="0.32847896" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32686085" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32928804" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" x="678" y="235" width="85" height="450" id="Maven" order="6" weight="0.3288719" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.24952199" />
+      <window_info anchor="right" id="Database" order="8" weight="0.24282983" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.23804972" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.23326287" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -591,7 +634,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32847896" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32833335" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
@@ -602,7 +645,7 @@
       <window_info anchor="right" x="678" y="235" width="85" height="450" id="Maven" order="6" weight="0.3288719" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.24952199" />
       <window_info anchor="right" id="Database" order="8" weight="0.24282983" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -659,6 +702,17 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="wpi2019" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_ORDER">
                 <list>
                   <option value="0" />
@@ -672,17 +726,17 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-        <option value="2" />
-      </set>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
           <value>
-            <list />
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="wpi2019" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
         <entry key="User">
@@ -696,12 +750,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add pid subsystem support" />
     <MESSAGE value="organize ros file" />
-    <MESSAGE value="update README.md" />
     <MESSAGE value="Tested publisher and subscriber nodes" />
     <MESSAGE value="add two pid drive commands" />
     <MESSAGE value="add a pid command for upper motor. Optimize shuffleboard display." />
     <MESSAGE value="fix bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -714,9 +768,6 @@
           <caret line="138" column="6" selection-start-line="138" selection-start-column="1" selection-end-line="138" selection-end-column="6" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/runShuffleBoard.bat">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/build/gradlerio_simulateJar.bat">
       <provider selected="true" editor-type-id="text-editor" />
@@ -814,13 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/PublisherNodes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -831,31 +875,6 @@
             <element signature="e#243#244#0" expanded="true" />
             <element signature="e#721#722#0" expanded="true" />
             <element signature="e#771#772#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/SubscriberNodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#FRCNode#0;class#FRCNode#0" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/ROS/MainExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#997#998#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -893,20 +912,6 @@
             <element signature="e#10976#10977#0" expanded="true" />
             <element signature="e#11024#11025#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drivetrain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/TeleopGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -949,43 +954,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java">
+    <entry file="file://$PROJECT_DIR$/FRC-ROS-Shuffleboard.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-124">
+            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drivetrain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+        <state relative-caret-position="1674">
+          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/UpperCommand/ElevatorCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1762#1763#0" expanded="true" />
+            <element signature="e#1790#1791#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
+            <element signature="e#2027#2028#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/smartdashboard/SendableChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1565">
+          <caret line="100" column="41" lean-forward="true" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulator_config/simulator_config.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulator_config/simulator_config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/AutoGroup.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/ROS/MainExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="306">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/UpperCommand/ElevatorCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/SubscriberNodes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="38" column="88" selection-start-line="38" selection-start-column="88" selection-end-line="38" selection-end-column="88" />
+        <state relative-caret-position="515">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1039#1040#0" expanded="true" />
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
-            <element signature="e#1790#1791#0" expanded="true" />
-            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Elevator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        <state relative-caret-position="310">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#464#465#0" expanded="true" />
@@ -996,61 +1052,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/Navigation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1023">
-          <caret line="37" column="13" selection-start-line="7" selection-start-column="4" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/JoystickDrive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="20" column="89" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/Robot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1457">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="67">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/OI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        <state relative-caret-position="453">
+          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+          <folding>
+            <element signature="e#1661#1662#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="558">
-            <caret line="18" column="159" lean-forward="true" selection-start-line="18" selection-start-column="159" selection-end-line="18" selection-end-column="159" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/runShuffleBoard.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/AutoGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/PIDController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4352">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/TeleopGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/JoystickDrive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="22" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/Navigation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64">
+          <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1095,7 +1176,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1136,7 +1217,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.32890996" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

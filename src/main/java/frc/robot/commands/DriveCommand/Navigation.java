@@ -1,6 +1,7 @@
 package frc.robot.commands.DriveCommand;
 
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.ROS.MainExecutor;
 import frc.robot.Robot;
 
@@ -19,6 +20,8 @@ public class Navigation extends Command {
 
     @Override
     public void execute() {
+        SmartDashboard.putNumber("linearX", mainExecutor.subscriberNodes.getLinearX());
+        SmartDashboard.putNumber("AngularZ", mainExecutor.subscriberNodes.getAngularZ());
         Robot.m_drivetrain.ArcadeDrive(mainExecutor.subscriberNodes.getLinearX(),mainExecutor.subscriberNodes.getAngularZ(), false);
     }
 
