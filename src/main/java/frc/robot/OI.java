@@ -3,8 +3,6 @@ package frc.robot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 
 public class OI {
@@ -23,6 +21,7 @@ public class OI {
             buttonA1 = new JoystickButton(xbox, RobotMap.xboxA1);
             buttonB1 = new JoystickButton(xbox, RobotMap.xboxA2);
             buttonX1 = new JoystickButton(xbox, RobotMap.xboxX1);
+            buttonY1 = new JoystickButton(xbox, RobotMap.xboxY1);
             buttonLeft1 = new JoystickButton(xbox, RobotMap.xboxLeft1);
             buttonRight1 = new JoystickButton(xbox, RobotMap.xboxRight1);
             buttonBack1 = new JoystickButton(xbox, RobotMap.xboxBack1);
