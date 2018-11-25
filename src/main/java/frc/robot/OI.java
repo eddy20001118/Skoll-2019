@@ -3,6 +3,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
+import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 
@@ -17,7 +18,7 @@ public class OI {
         initXboxButtons();
     }
 
-    private void initXboxButtons(){
+    private void initXboxButtons() {
         {
             buttonA1 = new JoystickButton(xbox, RobotMap.xboxA1);
             buttonB1 = new JoystickButton(xbox, RobotMap.xboxA2);
@@ -43,12 +44,16 @@ public class OI {
         return xbox.getRawAxis(0);
     }
 
+    public double getXboxA3() {
+        return xbox.getRawAxis(4);
+    }
+
     public boolean getXboxBtnAStatus() {
         //TODO
         //needs to return button status
 
         int ClickCount = 0;
-        if(xbox.getRawButtonPressed(RobotMap.xboxA1)){
+        if (xbox.getRawButtonPressed(RobotMap.xboxA1)) {
             ClickCount++;
         }
         return ClickCount % 2 != 0;
