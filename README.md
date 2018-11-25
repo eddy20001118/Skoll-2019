@@ -1,19 +1,16 @@
 # FRC Skoll-2019 project
 This is Skoll-2019 project using ROS to help navigate in autonomous period. This project only aims to be deployed on roborio. All ROS navigation packages(code) are not uploaded yet, I will create a new repository to show them later this year. In this project, rosjava is used for creating a communication between Roborio and ROS(typically running on raspberry pi or jetson). If you want to explore how to use rosjava, go to "Navigation.java" in "commands/DriveCommand" folder, this will give you a brief example. I will add wiki in early 2019.
 
-
+**This branch is test with 2019 core libraries, may be unstable**
 It is important to aware that:
->This release uses the 2018 Core Libraries, however all tooling (GradleRIO + IDE support) is incubating for 2019. 
+>NOTE: You are using a BETA version of GradleRIO, designed for the 2019 Season!
+This release requires the 2019 RoboRIO Image, and may be unstable. Do not use this for the official competition season.
 
-All code are tested by using Wpi-JNI(Java Native Interface) libs. However, it is not a complete version which is just released. Many bugs may appear when is deployed to roborio. Important versions are shown below: 
+All code are tested by using SnobotSimulatorPlugin 2019.0.0 with Wpi-JNI(Java Native Interface) libs. However, it is not a complete version which is just released. Many bugs may appear when is deployed to roborio. Important versions are shown below: 
 
-**WPILib: 2018.4.1 (wpilibVersion)** \
-**NTCore: 4.1.0 (ntcoreVersion)** \
-**Shuffleboard: 1.3.1 (shuffleboardVersion)** \
-**GradleRIO: 2019.0.0-alpha-3 (GradleRIOVersion)** \
-**Pathfinder: 1.8 (pathfinderVersion)**
-
-**I'm not going to upgrade this project with 2019 core Libraries until the stable version is released. Please check it out [here](https://github.com/wpilibsuite/allwpilib/releases) to see 2019 core Libraries status.**
+**WPILib: 2019.1.1-beta-1 (wpilibVersion)** \
+**Shuffleboard: 2019.1.1-beta-1 (shuffleboardVersion)** \
+**GradleRIO: 2019.1.1-beta-1 (GradleRIOVersion)** 
 
 ## FRC-ROS Project Structure
 The project structure is shown below. This structure diagram mainly shows the structure about autonomous navigation, introducing how ROS and Roborio cooperate.
