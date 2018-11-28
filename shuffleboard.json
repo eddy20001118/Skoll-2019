@@ -1,5 +1,4 @@
 {
-  "dividerPosition": 0.2809457579972184,
   "tabPane": [
     {
       "title": "Tab 1",
@@ -18,7 +17,8 @@
             ],
             "content": {
               "_type": "List Layout",
-              "_title": "List",
+              "_title": "Main",
+              "Layout/Label position": "BOTTOM",
               "_children": [
                 {
                   "_type": "Command",
@@ -26,14 +26,14 @@
                   "_title": "SmartDashboard/TeleopGroup"
                 },
                 {
-                  "_type": "Command",
-                  "_source0": "network_table:///SmartDashboard/AutoGroup",
-                  "_title": "/SmartDashboard/AutoGroup"
-                },
-                {
                   "_type": "ComboBox Chooser",
                   "_source0": "network_table:///SmartDashboard/Chooser",
                   "_title": "SmartDashboard/Chooser"
+                },
+                {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/CurrentCase",
+                  "_title": "SmartDashboard/CurrentCase"
                 }
               ]
             }
@@ -45,22 +45,23 @@
             ],
             "content": {
               "_type": "List Layout",
-              "_title": "List",
+              "_title": "Drivatrain",
+              "Layout/Label position": "BOTTOM",
               "_children": [
                 {
                   "_type": "Differential Drivebase",
                   "_source0": "network_table:///LiveWindow/Ungrouped/DifferentialDrive[1]",
                   "_title": "LiveWindow/Ungrouped/DifferentialDrive[1]",
-                  "numberOfWheels": 4,
-                  "wheelDiameter": 80.0,
-                  "showVectors": true
+                  "Wheels/Number of wheels": 4,
+                  "Wheels/Wheel diameter": 80.0,
+                  "Visuals/Show velocity vectors": true
                 },
                 {
                   "_type": "Boolean Box",
                   "_source0": "network_table:///SmartDashboard/Drivetrain reverted",
                   "_title": "SmartDashboard/Drivetrain reverted",
-                  "colorWhenTrue": "#7CFC00FF",
-                  "colorWhenFalse": "#8B0000FF"
+                  "Colors/Color when true": "#7CFC00FF",
+                  "Colors/Color when false": "#8B0000FF"
                 }
               ]
             }
@@ -68,18 +69,18 @@
           "5,0": {
             "size": [
               2,
-              5
+              4
             ],
             "content": {
               "_type": "Subsystem Layout",
-              "_title": "List",
+              "_title": "Elevator",
+              "Layout/Label position": "BOTTOM",
               "_children": [
                 {
                   "_type": "Speed Controller",
                   "_source0": "network_table:///LiveWindow/Ungrouped/Talon[4]",
                   "_title": "LiveWindow/Ungrouped/Talon[4]",
-                  "controllable": false,
-                  "orientation": "HORIZONTAL"
+                  "Visuals/Orientation": "HORIZONTAL"
                 },
                 {
                   "_type": "PID Controller",
@@ -90,8 +91,8 @@
                   "_type": "Boolean Box",
                   "_source0": "network_table:///SmartDashboard/Elevator On target",
                   "_title": "SmartDashboard/Elevator On target",
-                  "colorWhenTrue": "#7CFC00FF",
-                  "colorWhenFalse": "#8B0000FF"
+                  "Colors/Color when true": "#7CFC00FF",
+                  "Colors/Color when false": "#8B0000FF"
                 }
               ]
             }
@@ -138,9 +139,9 @@
               "_type": "Simple Dial",
               "_source0": "network_table:///SmartDashboard/AngularZ",
               "_title": "SmartDashboard/AngularZ",
-              "minValue": -1.0,
-              "maxValue": 1.0,
-              "valueVisible": true
+              "Range/Min": -1.0,
+              "Range/Max": 1.0,
+              "Visuals/Show value": true
             }
           },
           "3,3": {
@@ -152,9 +153,9 @@
               "_type": "Simple Dial",
               "_source0": "network_table:///SmartDashboard/linearX",
               "_title": "SmartDashboard/linearX",
-              "minValue": -1.0,
-              "maxValue": 1.0,
-              "valueVisible": true
+              "Range/Min": -1.0,
+              "Range/Max": 1.0,
+              "Visuals/Show value": true
             }
           },
           "4,4": {
@@ -177,6 +178,55 @@
               "_type": "Command",
               "_source0": "network_table:///SmartDashboard/DriveToDistance",
               "_title": "/SmartDashboard/DriveToDistance"
+            }
+          },
+          "7,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Robot Preferences",
+              "_source0": "network_table:///Preferences",
+              "_title": "Preferences",
+              "Miscellaneous/Show search box": true
+            }
+          },
+          "7,1": {
+            "size": [
+              2,
+              2
+            ],
+            "content": {
+              "_type": "List Layout",
+              "_title": "Fake Sensor",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Number Slider",
+                  "_source0": "network_table:///SmartDashboard/Angle",
+                  "_title": "SmartDashboard/Angle",
+                  "Slider Settings/Min": 0.0,
+                  "Slider Settings/Max": 720.0,
+                  "Slider Settings/Block increment": 0.0625
+                },
+                {
+                  "_type": "Number Slider",
+                  "_source0": "network_table:///SmartDashboard/ElevatorEncoder",
+                  "_title": "SmartDashboard/ElevatorEncoder",
+                  "Slider Settings/Min": 0.0,
+                  "Slider Settings/Max": 200.0,
+                  "Slider Settings/Block increment": 0.0625
+                },
+                {
+                  "_type": "Number Slider",
+                  "_source0": "network_table:///SmartDashboard/DrivetrainEncoder",
+                  "_title": "SmartDashboard/DrivetrainEncoder",
+                  "Slider Settings/Min": -1.0,
+                  "Slider Settings/Max": 1.0,
+                  "Slider Settings/Block increment": 0.0625
+                }
+              ]
             }
           }
         }
@@ -228,5 +278,11 @@
         }
       }
     }
-  ]
+  ],
+  "windowGeometry": {
+    "x": 0.0,
+    "y": 0.0,
+    "width": 1440.0,
+    "height": 920.0
+  }
 }

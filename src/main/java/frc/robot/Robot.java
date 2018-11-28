@@ -22,22 +22,21 @@ public class Robot extends TimedRobot {
     public static Elevator m_elevator = new Elevator();
     public static OI m_oi = new OI();
 
+    public enum AutonomousMode {Case1, Case2, Case3}
+
     private CommandGroup m_teleopgroup = new TeleopGroup();
-    private CommandGroup m_autogroup = new AutoGroup();
+    private CommandGroup m_autogroup;
     private Command m_navigation = new Navigation();
     private Command m_turntodegrees = new TurnToDegrees(90);
     private Command m_drivetodistance = new DriveToDistance(40);
     private Command m_elevatorcommand = new ElevatorCommand();
     private Command m_joystickdrive = new JoystickDrive();
 
-    private enum AutonomousMode {Case1, Case2, Case3}
-
     private SendableChooser<AutonomousMode> sendableChooser = new SendableChooser<>();
 
     @Override
     public void robotInit() {
         /*Remember to delete these when deploy to roborio*/
-        m_autogroup.setRunWhenDisabled(true);
         m_teleopgroup.setRunWhenDisabled(true);
         m_navigation.setRunWhenDisabled(true);
         m_turntodegrees.setRunWhenDisabled(true);
@@ -52,7 +51,6 @@ public class Robot extends TimedRobot {
 
         /*Add Sendable widgets*/
         SmartDashboard.putData("Chooser", sendableChooser);
-        SmartDashboard.putData(m_autogroup);
         SmartDashboard.putData(m_teleopgroup);
         SmartDashboard.putData(m_navigation);
         SmartDashboard.putData(m_turntodegrees);
@@ -64,6 +62,12 @@ public class Robot extends TimedRobot {
         SmartDashboard.putNumber("linearX", 0.0);
         SmartDashboard.putNumber("AngularZ", 0.0);
         SmartDashboard.putBoolean("Drivetrain reverted", false);
+
+        /*Init fake sensors reading for simulation test*/
+        SmartDashboard.putNumber("FakeGyro", 0.0);
+        SmartDashboard.putNumber("FakeDrivetrainEncoder", 0.0);
+        SmartDashboard.putNumber("FakeElevatorEncoder", 0.0);
+        /*Delete when real sensors is avavilable*/
     }
 
     @Override
@@ -73,10 +77,7 @@ public class Robot extends TimedRobot {
 
     @Override
     public void autonomousInit() {
-        //TODO
-        //update selection code
-        //e.g AutonomousMode selectedMode = sendableChooser.getSelected();
-        //if(selectedMode == xxx){ //run which command }
+        m_autogroup = new AutoGroup(sendableChooser.getSelected());
         m_autogroup.start();
     }
 
@@ -103,6 +104,7 @@ public class Robot extends TimedRobot {
 
     @Override
     public void disabledInit() {
+        Scheduler.getInstance().removeAll();
     }
 
     @Override

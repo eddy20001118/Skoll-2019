@@ -2,11 +2,11 @@ package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.RobotMap;
 
 public class Elevator extends Subsystem {
     private Talon elevator = new Talon(RobotMap.elevator);
-
     public Elevator() {
         elevator.setSafetyEnabled(false);
         elevator.setInverted(true);
@@ -32,7 +32,7 @@ public class Elevator extends Subsystem {
 
     public double getEncoderPosition() {
         //TODO
-        //replace here with your encoder reading
-        return 100;
+        //Replace with real sensor reading
+        return SmartDashboard.getNumber("FakeElevatorEncoder",100);
     }
 }

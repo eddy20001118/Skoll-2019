@@ -1,11 +1,9 @@
 package frc.robot.subsystems;
 
-import edu.wpi.first.wpilibj.ADXRS450_Gyro;
-import edu.wpi.first.wpilibj.SpeedController;
-import edu.wpi.first.wpilibj.SpeedControllerGroup;
-import edu.wpi.first.wpilibj.Talon;
+import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.RobotMap;
 import frc.robot.commands.DriveCommand.JoystickDrive;
 
@@ -21,11 +19,16 @@ public class Drivetrain extends Subsystem {
     private DifferentialDrive m_drivetrain =
             new DifferentialDrive(m_leftcontroller, m_rightcontroller);
     private ADXRS450_Gyro gyro;
+    private BuiltInAccelerometer accelerometer;
+    private Preferences preferences;
 
     public Drivetrain() {
         gyro = new ADXRS450_Gyro(RobotMap.gyroChannel);
+        gyro.calibrate();
+        accelerometer = new BuiltInAccelerometer();
         m_drivetrain.setSafetyEnabled(false);
         m_drivetrain.setMaxOutput(1);
+        preferences = Preferences.getInstance();
     }
 
     @Override
@@ -56,7 +59,10 @@ public class Drivetrain extends Subsystem {
     }
 
     public double getHeading() {
-        double angle = gyro.getAngle() % 360;
+        //TODO
+        //Replace with real sensor reading
+//        double angle = gyro.getAngle() % 360;
+        double angle = SmartDashboard.getNumber("FakeGyro",10) % 360;
         return angle < 0 ? 360 + angle : angle;
     }
 
@@ -80,7 +86,7 @@ public class Drivetrain extends Subsystem {
 
     public double getAverageEncoderPosition(){
         //TODO
-        //Complete this return method with reading from encoders
-        return 0.0;
+        //Replace with real sensor reading
+        return SmartDashboard.getNumber("FakeDrivetrainEncoder",0.0);
     }
 }
