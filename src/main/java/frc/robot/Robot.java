@@ -31,7 +31,6 @@ public class Robot extends TimedRobot {
     private Command m_drivetodistance = new DriveToDistance(40);
     private Command m_elevatorcommand = new ElevatorCommand();
     private Command m_joystickdrive = new JoystickDrive();
-
     private SendableChooser<AutonomousMode> sendableChooser = new SendableChooser<>();
 
     @Override

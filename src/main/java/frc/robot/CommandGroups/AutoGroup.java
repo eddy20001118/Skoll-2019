@@ -24,18 +24,18 @@ public class AutoGroup extends CommandGroup {
     }
 
 
-    public void case1() {
+    private void case1() {
         SmartDashboard.putString("CurrentCase", "case1");
         addSequential(new TurnToDegrees(90));
         addSequential(new DriveToDistance(50));
         addSequential(new Navigation());
     }
 
-    public void case2() {
+    private void case2() {
         SmartDashboard.putString("CurrentCase", "case2");
     }
 
-    public void case3() {
+    private void case3() {
         SmartDashboard.putString("CurrentCase", "case3");
     }
 }

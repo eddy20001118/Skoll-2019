@@ -8,6 +8,9 @@ repositories {
         url "http://first.wpi.edu/FRC/roborio/maven/release/"
     }
     maven {
+        url "http://devsite.ctr-electronics.com/maven/release/"
+    }
+    maven {
         url "https://raw.githubusercontent.com/rosjava/rosjava_mvn_repo/master/"
     }
     mavenLocal()
@@ -42,6 +45,8 @@ dependencies {
     compile 'org.ros.rosjava_core:rosjava:[0.3,0.4)'
     compile 'org.ros.rosjava_messages:geometry_msgs:[1.12,1.13)'
     compile 'org.ros.rosjava_messages:sensor_msgs:[1.12.5,1.12.6)'
+    compile "com.ctre.frcbeta.phoenix:api-java:5.10.0"
+    nativeZip "com.ctre.frcbeta.phoenix:cci:5.10.0"
     compile wpilib()
     snobotSimCompile snobotSimJava()
 

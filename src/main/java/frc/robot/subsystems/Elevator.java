@@ -26,13 +26,11 @@ public class Elevator extends Subsystem {
     }
 
     public void resetEncoder() {
-        //TODO
-        //replace with your own reset method
+        //TODO replace with your own reset method
     }
 
     public double getEncoderPosition() {
-        //TODO
-        //Replace with real sensor reading
+        //TODO Replace with real sensor reading
         return SmartDashboard.getNumber("FakeElevatorEncoder",100);
     }
 }
