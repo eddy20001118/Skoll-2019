@@ -6,19 +6,23 @@ import frc.robot.Robot;
 
 public class JoystickDrive extends Command {
     public JoystickDrive() {
-
+        SmartDashboard.putBoolean("Drivetrain protect", Robot.m_oi.getDrivetrainProtect());
         requires(Robot.m_drivetrain);
     }
 
 
     @Override
     protected void initialize() {
-        SmartDashboard.putBoolean("Drivetrain reverted", Robot.m_oi.getXboxBtnAStatus());
     }
 
     @Override
     protected void execute() {
-        Robot.m_drivetrain.protectedArcadeDrive(Robot.m_oi.getXboxA1(), Robot.m_oi.getXboxA2(), Robot.m_oi.getXboxBtnAStatus());
+        SmartDashboard.putBoolean("Drivetrain protect", Robot.m_oi.getDrivetrainProtect());
+        if (Robot.m_oi.getDrivetrainProtect()) {
+            Robot.m_drivetrain.protectedArcadeDrive(Robot.m_oi.getXboxA1(), Robot.m_oi.getXboxA2(), Robot.m_oi.getDrivetrainRevert());
+        } else {
+            Robot.m_drivetrain.nonProtectArcadeDrive(Robot.m_oi.getXboxA1(), Robot.m_oi.getXboxA2(), Robot.m_oi.getDrivetrainRevert());
+        }
     }
 
     @Override

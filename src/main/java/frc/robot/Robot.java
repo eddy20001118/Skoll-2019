@@ -26,11 +26,15 @@ public class Robot extends TimedRobot {
 
     private CommandGroup m_teleopgroup = new TeleopGroup();
     private CommandGroup m_autogroup;
+
+    /* test command individually*/
     private Command m_navigation = new Navigation();
     private Command m_turntodegrees = new TurnToDegrees(90);
     private Command m_drivetodistance = new DriveToDistance(40);
     private Command m_elevatorcommand = new ElevatorCommand();
     private Command m_joystickdrive = new JoystickDrive();
+    /*Delete these when deploy to roborio*/
+
     private SendableChooser<AutonomousMode> sendableChooser = new SendableChooser<>();
 
     @Override
@@ -42,11 +46,19 @@ public class Robot extends TimedRobot {
         m_drivetodistance.setRunWhenDisabled(true);
         m_elevatorcommand.setRunWhenDisabled(true);
         m_joystickdrive.setRunWhenDisabled(true);
-        /*delete these when deploy to roborio*/
+        /*Delete these when deploy to roborio*/
 
         sendableChooser.setDefaultOption("Case1", AutonomousMode.Case1);
         sendableChooser.addOption("Case2", AutonomousMode.Case2);
         sendableChooser.addOption("Case3", AutonomousMode.Case3);
+
+        /*Init fake sensors reading for simulation test*/
+        SmartDashboard.putNumber("FakeBuiltInAcceleratorX", 0.0);
+        SmartDashboard.putNumber("FakeGyro", 0.0);
+        SmartDashboard.putNumber("FakeDrivetrainDistance", 0.0);
+        SmartDashboard.putNumber("FakeDrivetrainSpeed", 0.0);
+        SmartDashboard.putNumber("FakeElevatorEncoder", 0.0);
+        /*Delete when real sensors is avavilable*/
 
         /*Add Sendable widgets*/
         SmartDashboard.putData("Chooser", sendableChooser);
@@ -57,16 +69,6 @@ public class Robot extends TimedRobot {
         SmartDashboard.putData(m_elevatorcommand);
         SmartDashboard.putData(m_joystickdrive);
 
-        /*Add inital values, will be replace when running*/
-        SmartDashboard.putNumber("linearX", 0.0);
-        SmartDashboard.putNumber("AngularZ", 0.0);
-        SmartDashboard.putBoolean("Drivetrain reverted", false);
-
-        /*Init fake sensors reading for simulation test*/
-        SmartDashboard.putNumber("FakeGyro", 0.0);
-        SmartDashboard.putNumber("FakeDrivetrainEncoder", 0.0);
-        SmartDashboard.putNumber("FakeElevatorEncoder", 0.0);
-        /*Delete when real sensors is avavilable*/
     }
 
     @Override

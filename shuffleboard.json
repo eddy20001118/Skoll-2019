@@ -13,7 +13,7 @@
           "3,0": {
             "size": [
               2,
-              3
+              4
             ],
             "content": {
               "_type": "List Layout",
@@ -60,6 +60,13 @@
                   "_type": "Boolean Box",
                   "_source0": "network_table:///SmartDashboard/Drivetrain reverted",
                   "_title": "SmartDashboard/Drivetrain reverted",
+                  "Colors/Color when true": "#7CFC00FF",
+                  "Colors/Color when false": "#8B0000FF"
+                },
+                {
+                  "_type": "Boolean Box",
+                  "_source0": "network_table:///SmartDashboard/Drivetrain protect",
+                  "_title": "SmartDashboard/Drivetrain protect",
                   "Colors/Color when true": "#7CFC00FF",
                   "Colors/Color when false": "#8B0000FF"
                 }
@@ -115,22 +122,11 @@
             ],
             "content": {
               "_type": "Command",
-              "_source0": "network_table:///SmartDashboard/Navigation",
-              "_title": "SmartDashboard/Navigation"
-            }
-          },
-          "2,4": {
-            "size": [
-              1,
-              1
-            ],
-            "content": {
-              "_type": "Command",
               "_source0": "network_table:///SmartDashboard/ElevatorCommand",
               "_title": "SmartDashboard/ElevatorCommand"
             }
           },
-          "4,3": {
+          "6,4": {
             "size": [
               1,
               1
@@ -144,7 +140,7 @@
               "Visuals/Show value": true
             }
           },
-          "3,3": {
+          "5,4": {
             "size": [
               1,
               1
@@ -195,38 +191,65 @@
           "7,1": {
             "size": [
               2,
-              2
+              4
             ],
             "content": {
               "_type": "List Layout",
-              "_title": "Fake Sensor",
+              "_title": "List Layout",
               "Layout/Label position": "BOTTOM",
               "_children": [
                 {
                   "_type": "Number Slider",
-                  "_source0": "network_table:///SmartDashboard/Angle",
-                  "_title": "SmartDashboard/Angle",
-                  "Slider Settings/Min": 0.0,
-                  "Slider Settings/Max": 720.0,
+                  "_source0": "network_table:///SmartDashboard/FakeDrivetrainSpeed",
+                  "_title": "SmartDashboard/FakeDrivetrainSpeed",
+                  "Slider Settings/Min": -1.0,
+                  "Slider Settings/Max": 1.0,
                   "Slider Settings/Block increment": 0.0625
                 },
                 {
                   "_type": "Number Slider",
-                  "_source0": "network_table:///SmartDashboard/ElevatorEncoder",
-                  "_title": "SmartDashboard/ElevatorEncoder",
+                  "_source0": "network_table:///SmartDashboard/FakeBuiltInAcceleratorX",
+                  "_title": "SmartDashboard/FakeBuiltInAcceleratorX",
+                  "Slider Settings/Min": -10.0,
+                  "Slider Settings/Max": 10.0,
+                  "Slider Settings/Block increment": 0.0625
+                },
+                {
+                  "_type": "Number Slider",
+                  "_source0": "network_table:///SmartDashboard/FakeGyro",
+                  "_title": "SmartDashboard/FakeGyro",
+                  "Slider Settings/Min": 0.0,
+                  "Slider Settings/Max": 360.0,
+                  "Slider Settings/Block increment": 0.0625
+                },
+                {
+                  "_type": "Number Slider",
+                  "_source0": "network_table:///SmartDashboard/FakeElevatorEncoder",
+                  "_title": "SmartDashboard/FakeElevatorEncoder",
                   "Slider Settings/Min": 0.0,
                   "Slider Settings/Max": 200.0,
                   "Slider Settings/Block increment": 0.0625
                 },
                 {
                   "_type": "Number Slider",
-                  "_source0": "network_table:///SmartDashboard/DrivetrainEncoder",
-                  "_title": "SmartDashboard/DrivetrainEncoder",
-                  "Slider Settings/Min": -1.0,
-                  "Slider Settings/Max": 1.0,
+                  "_source0": "network_table:///SmartDashboard/FakeDrivetrainDistance",
+                  "_title": "SmartDashboard/FakeDrivetrainDistance",
+                  "Slider Settings/Min": 0.0,
+                  "Slider Settings/Max": 200.0,
                   "Slider Settings/Block increment": 0.0625
                 }
               ]
+            }
+          },
+          "2,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Navigation",
+              "_title": "SmartDashboard/Navigation"
             }
           }
         }
@@ -280,9 +303,9 @@
     }
   ],
   "windowGeometry": {
-    "x": 0.0,
-    "y": 0.0,
-    "width": 1440.0,
-    "height": 920.0
+    "x": -7.333333492279053,
+    "y": -7.333333492279053,
+    "width": 1454.6666259765625,
+    "height": 934.6666870117188
   }
 }

@@ -23,7 +23,7 @@ public class DriveTrainEncodersInput implements PIDSource {
 
     @Override
     public double pidGet() {
-        return Robot.m_drivetrain.getAverageEncoderPosition();
+        return Robot.m_drivetrain.getAverageDistance();
     }
 
 

@@ -4,14 +4,14 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 
 public class OI {
     private Joystick xbox;
     private Joystick logi;
     private Button buttonA1, buttonB1, buttonX1, buttonY1, buttonLeft1, buttonRight1, buttonBack1, buttonStart1;
-    private int ClickCount = 0;
+    private int A1ClickCount = 0;
+    private int Y1ClickCount = 0;
 
     OI() {
         xbox = new Joystick(RobotMap.xboxchannel);
@@ -33,16 +33,10 @@ public class OI {
     }
 
     public double getXboxA1() {
-        //TODO
-        //Change axis channel to match real situation
-        //velocity limit here if possible
         return xbox.getRawAxis(3) - xbox.getRawAxis(2);
     }
 
     public double getXboxA2() {
-        //TODO
-        //Change axis channel to match real situation
-        //velocity limit here if possible
         return xbox.getRawAxis(0);
     }
 
@@ -50,17 +44,25 @@ public class OI {
         return 100 - xbox.getRawAxis(4) * 100;
     }
 
-    public boolean getXboxBtnAStatus() {
-        //TODO
-        //needs to return button status
-
+    /*return the value to enable(disable) reverted drivertrain*/
+    public boolean getDrivetrainRevert() {
         if (xbox.getRawButton(RobotMap.xboxA1)) {
             Timer.delay(0.02);
             if (!xbox.getRawButton(RobotMap.xboxA1)) {
-                ClickCount++;
+                A1ClickCount++;
             }
         }
-        SmartDashboard.putNumber("click", ClickCount);
-        return ClickCount % 2 != 0;
+        return A1ClickCount % 2 != 0;
+    }
+
+    /*return the value to enable(disable) acceleration protect*/
+    public boolean getDrivetrainProtect() {
+        if (xbox.getRawButton(RobotMap.xboxY1)) {
+            Timer.delay(0.02);
+            if (!xbox.getRawButton(RobotMap.xboxY1)) {
+                Y1ClickCount++;
+            }
+        }
+        return Y1ClickCount % 2 != 0;
     }
 }

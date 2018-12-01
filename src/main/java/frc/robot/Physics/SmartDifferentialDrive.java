@@ -37,6 +37,12 @@ public class SmartDifferentialDrive extends DifferentialDrive {
         }
     }
 
+    public double getAcceleratorX(){
+        //TODO Replace with real sensor reading
+        //return accelerameter.getX();
+        return SmartDashboard.getNumber("FakeBuiltInAcceleratorX", 0.0);
+    }
+
     public void nonProtectArcadeDrive(double linearX, double angularZ, boolean isRevert){
         SmartDashboard.putNumber("linearX", linearX);
         SmartDashboard.putNumber("AngularZ", angularZ);
@@ -52,8 +58,8 @@ public class SmartDifferentialDrive extends DifferentialDrive {
     private void accelerationTrigger(double linearX, double angularZ) {
         double limitStartSpeed = linearX - Math.copySign(0.4, linearX);
 
-        /*if the value of the joystick is change but in range, we still
-        * consider that robot need controll by accelerator protector. Otherwise
+        /*if the value of the joystick is changed but in range, we still
+        * consider that robot need control by accelerator protector. Otherwise
         * we will let human player take over the robot*/
 
         while (Math.abs(limitStartSpeed) < Math.abs(linearX) && isInRange(Robot.m_oi.getXboxA1())) {

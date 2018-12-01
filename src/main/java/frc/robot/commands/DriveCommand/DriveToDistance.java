@@ -7,7 +7,6 @@ import frc.robot.PID.PIDOutputs.PIDOutputImpl;
 import frc.robot.PID.PIDSources.DriveTrainEncodersInput;
 import frc.robot.PID.PIDSources.GyroInput;
 import frc.robot.Robot;
-import frc.robot.subsystems.Drivetrain;
 
 public class DriveToDistance extends Command {
     private double TargetDistance; //unit : meter
@@ -21,9 +20,11 @@ public class DriveToDistance extends Command {
     private PIDController createEncoderPIDController() {
         PIDController newPIDController = new PIDController(.03, .01, .01, new DriveTrainEncodersInput(), speedPIDOutput);
 
+        newPIDController.setInputRange(0,200);
         newPIDController.setOutputRange(-0.5, 0.5);
-        newPIDController.setSetpoint(Robot.m_drivetrain.getAverageEncoderPosition() + TargetDistance);
-        newPIDController.setAbsoluteTolerance(100);
+        newPIDController.setSetpoint(TargetDistance);
+        newPIDController.setAbsoluteTolerance(1); //Max tolerance is 1 meter
+        newPIDController.setContinuous(false);
         newPIDController.enable();
         SmartDashboard.putData("DrivetrainEncoder", newPIDController);
         return newPIDController;

@@ -25,9 +25,16 @@ public class Drivetrain extends Subsystem {
         m_rightEncoder = new Encoder(RobotMap.rightEncoderA, RobotMap.rightEncoderB, false, Encoder.EncodingType.k4X);
 
         m_leftfront = new SmartSpark(RobotMap.leftfront, m_leftEncoder);
+        m_leftfront.initPID(0.3, 0, 0);
+
         m_leftrear = new SmartSpark(RobotMap.leftrear, m_leftEncoder);
+        m_leftrear.initPID(0.3, 0, 0);
+
         m_rightfront = new SmartSpark(RobotMap.rightfront, m_rightEncoder);
+        m_rightfront.initPID(0.3, 0, 0);
+
         m_rightrear = new SmartSpark(RobotMap.rightrear, m_rightEncoder);
+        m_rightrear.initPID(0.3, 0, 0);
 
         m_leftcontroller = new SpeedControllerGroup(m_leftfront, m_leftrear);
         m_rightcontroller = new SpeedControllerGroup(m_rightfront, m_rightrear);
@@ -58,9 +65,8 @@ public class Drivetrain extends Subsystem {
     }
 
     public double getHeading() {
-        //TODO
-        //Replace with real sensor reading
-//        double angle = gyro.getAngle() % 360;
+        //TODO Replace with real sensor reading
+        //double angle = gyro.getAngle() % 360;
         double angle = SmartDashboard.getNumber("FakeGyro", 10) % 360;
         return angle < 0 ? 360 + angle : angle;
     }
@@ -70,18 +76,22 @@ public class Drivetrain extends Subsystem {
     }
 
     public void resetEncoders() {
-        /*Each side has only one encoder, only needs to be reset once*/
-
+        /*Each side only has one encoder, only needs to be reset once*/
         m_leftfront.resetEncoder();
         m_rightfront.resetEncoder();
     }
 
-    public double getAverageEncoderPosition() {
+    public double getAverageDistance() {
+        //TODO Replace with real sensor reading
+        /*Each side only has one encoder, only needs to be calculated once*/
         double averagePosition = (m_leftfront.getDistance() + m_rightfront.getDistance()) / 2; //unit : meter
-        return SmartDashboard.getNumber("FakeDrivetrainEncoder", 0.0);
+        //return averagePosition;
+        return SmartDashboard.getNumber("FakeDrivetrainDistance", 0.0);
     }
 
     public double getAverageSpeed() {
-        return (m_leftfront.getRate() + m_rightfront.getRate()) / 2;
+        //TODO Replace with real sensor reading
+        //return (m_leftfront.getRate() + m_rightfront.getRate()) / 2;
+        return SmartDashboard.getNumber("FakeDrivetrainSpeed", 0.0);
     }
 }

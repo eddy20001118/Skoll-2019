@@ -15,7 +15,7 @@ public class TurnToDegrees extends Command {
     private PIDController createAnglePIDController() {
         PIDController newPIDController = new PIDController(.03, .01, .01, gyroInput, rotationPIDOutput);
 
-        newPIDController.setInputRange(-180,180);
+        newPIDController.setInputRange(0,360);
         newPIDController.setOutputRange(-0.5, 0.5);
         newPIDController.setSetpoint(TargetAngle);
         newPIDController.setAbsoluteTolerance(0.01);

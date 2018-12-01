@@ -5,8 +5,28 @@ mAnalogOut: []
 mDefaultI2CWrappers: {}
 mDefaultSpiWrappers:
   0: ADXRS450
-mDigitalIO: []
-mEncoders: []
+mDigitalIO:
+- mHandle: 0
+  mName: Digital IO 0
+  mType: com.snobot.simulator.module_wrapper.wpi.WpiDigitalIoWrapper
+- mHandle: 1
+  mName: Digital IO 1
+  mType: com.snobot.simulator.module_wrapper.wpi.WpiDigitalIoWrapper
+- mHandle: 2
+  mName: Digital IO 2
+  mType: com.snobot.simulator.module_wrapper.wpi.WpiDigitalIoWrapper
+- mHandle: 3
+  mName: Digital IO 3
+  mType: com.snobot.simulator.module_wrapper.wpi.WpiDigitalIoWrapper
+mEncoders:
+- mConnectedSpeedControllerHandle: 0
+  mHandle: 0
+  mName: Encoder 0
+  mType: com.snobot.simulator.module_wrapper.wpi.WpiEncoderWrapper
+- mConnectedSpeedControllerHandle: 2
+  mHandle: 1
+  mName: Encoder 1
+  mType: com.snobot.simulator.module_wrapper.wpi.WpiEncoderWrapper
 mGyros:
 - mHandle: 100
   mName: ADXRS450 Gyro
