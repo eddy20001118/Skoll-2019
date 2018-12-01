@@ -70,6 +70,8 @@ public class Drivetrain extends Subsystem {
     }
 
     public void resetEncoders() {
+        /*Each side has only one encoder, only needs to be reset once*/
+
         m_leftfront.resetEncoder();
         m_rightfront.resetEncoder();
     }
