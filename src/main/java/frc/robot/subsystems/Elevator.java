@@ -7,6 +7,7 @@ import frc.robot.RobotMap;
 
 public class Elevator extends Subsystem {
     private Talon elevator = new Talon(RobotMap.elevator);
+
     public Elevator() {
         elevator.setSafetyEnabled(false);
         elevator.setInverted(true);
@@ -31,6 +32,6 @@ public class Elevator extends Subsystem {
 
     public double getEncoderPosition() {
         //TODO Replace with real sensor reading
-        return SmartDashboard.getNumber("FakeElevatorEncoder",100);
+        return SmartDashboard.getNumber("FakeElevatorEncoder", 100);
     }
 }

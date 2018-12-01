@@ -16,4 +16,7 @@ public class RobotMap {
     public final static int xboxA1 = 1, xboxA2 = 2, xboxX1 = 3, xboxY1 = 4, xboxLeft1 = 5,
             xboxRight1 = 6, xboxBack1 = 7, xboxStart1 = 8;
     public final static SPI.Port gyroChannel = SPI.Port.kOnboardCS0;
+    public final static int leftEncoderA = 0, leftEncoderB = 1;
+    public final static int rightEncoderA = 2, rightEncoderB = 3;
+
 }

@@ -42,7 +42,7 @@ public class Robot extends TimedRobot {
         m_drivetodistance.setRunWhenDisabled(true);
         m_elevatorcommand.setRunWhenDisabled(true);
         m_joystickdrive.setRunWhenDisabled(true);
-        /*Remember to delete these when deploy to roborio*/
+        /*delete these when deploy to roborio*/
 
         sendableChooser.setDefaultOption("Case1", AutonomousMode.Case1);
         sendableChooser.addOption("Case2", AutonomousMode.Case2);
@@ -57,7 +57,7 @@ public class Robot extends TimedRobot {
         SmartDashboard.putData(m_elevatorcommand);
         SmartDashboard.putData(m_joystickdrive);
 
-        /*Add values, will be replace when running*/
+        /*Add inital values, will be replace when running*/
         SmartDashboard.putNumber("linearX", 0.0);
         SmartDashboard.putNumber("AngularZ", 0.0);
         SmartDashboard.putBoolean("Drivetrain reverted", false);

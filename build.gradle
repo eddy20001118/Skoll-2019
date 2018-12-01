@@ -1,18 +1,13 @@
 plugins {
     id "java"
-    id "edu.wpi.first.GradleRIO" version "2019.1.1-beta-1"
+    id "edu.wpi.first.GradleRIO" version "2019.1.1-beta-2a"
     id "com.snobot.simulator.plugin.SnobotSimulatorPlugin" version "2019-0.0.0" apply false
 }
 repositories {
-    maven {
-        url "http://first.wpi.edu/FRC/roborio/maven/release/"
-    }
-    maven {
-        url "http://devsite.ctr-electronics.com/maven/release/"
-    }
-    maven {
-        url "https://raw.githubusercontent.com/rosjava/rosjava_mvn_repo/master/"
-    }
+    maven { url "http://first.wpi.edu/FRC/roborio/maven/release/" }
+    maven { url "http://devsite.ctr-electronics.com/maven/release/" }
+    maven { url "http://www.kauailabs.com/maven2" }
+    maven { url "https://raw.githubusercontent.com/rosjava/rosjava_mvn_repo/master/" }
     mavenLocal()
     jcenter()
 }
@@ -45,8 +40,13 @@ dependencies {
     compile 'org.ros.rosjava_core:rosjava:[0.3,0.4)'
     compile 'org.ros.rosjava_messages:geometry_msgs:[1.12,1.13)'
     compile 'org.ros.rosjava_messages:sensor_msgs:[1.12.5,1.12.6)'
+    compile javaVendorLibraries()
+    nativeZip jniRoboRIOVendorLibraries()
+    nativeDesktopZip jniDesktopVendorLibraries()
+    testCompile 'junit:junit:4.12'
+    compile "com.ctre.frcbeta.phoenix:wpiapi-java:5.10.0"
     compile "com.ctre.frcbeta.phoenix:api-java:5.10.0"
-    nativeZip "com.ctre.frcbeta.phoenix:cci:5.10.0"
+    compile "com.kauailabs.navx.frc:navx-java:3.1.336"
     compile wpilib()
     snobotSimCompile snobotSimJava()
 

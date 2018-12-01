@@ -10,7 +10,7 @@ import frc.robot.Robot;
 import frc.robot.subsystems.Drivetrain;
 
 public class DriveToDistance extends Command {
-    private double TargetDistance;
+    private double TargetDistance; //unit : meter
 
     private PIDOutputImpl rotationPIDOutput = new PIDOutputImpl();
     private PIDOutputImpl speedPIDOutput = new PIDOutputImpl();
@@ -22,7 +22,7 @@ public class DriveToDistance extends Command {
         PIDController newPIDController = new PIDController(.03, .01, .01, new DriveTrainEncodersInput(), speedPIDOutput);
 
         newPIDController.setOutputRange(-0.5, 0.5);
-        newPIDController.setSetpoint(Robot.m_drivetrain.getAverageEncoderPosition() + Drivetrain.ConvertInchestoEncoderCount(TargetDistance));
+        newPIDController.setSetpoint(Robot.m_drivetrain.getAverageEncoderPosition() + TargetDistance);
         newPIDController.setAbsoluteTolerance(100);
         newPIDController.enable();
         SmartDashboard.putData("DrivetrainEncoder", newPIDController);
@@ -56,9 +56,7 @@ public class DriveToDistance extends Command {
 
     @Override
     protected void execute() {
-        SmartDashboard.putNumber("linearX", speedPIDOutput.getValue());
-        SmartDashboard.putNumber("AngularZ", rotationPIDOutput.getValue());
-        Robot.m_drivetrain.ArcadeDrive(speedPIDOutput.getValue(), rotationPIDOutput.getValue(), false);
+        Robot.m_drivetrain.nonProtectArcadeDrive(speedPIDOutput.getValue(), rotationPIDOutput.getValue(), false);
     }
 
     @Override

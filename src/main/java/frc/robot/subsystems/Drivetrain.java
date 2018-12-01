@@ -1,34 +1,43 @@
 package frc.robot.subsystems;
 
-import edu.wpi.first.wpilibj.*;
+import edu.wpi.first.wpilibj.ADXRS450_Gyro;
+import edu.wpi.first.wpilibj.BuiltInAccelerometer;
+import edu.wpi.first.wpilibj.Encoder;
+import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import frc.robot.Physics.SmartDifferentialDrive;
+import frc.robot.Physics.SmartSpark;
 import frc.robot.RobotMap;
 import frc.robot.commands.DriveCommand.JoystickDrive;
 
 public class Drivetrain extends Subsystem {
-    private SpeedController m_leftfront, m_leftrear, m_rightfront, m_rightrear;
+    private SmartSpark m_leftfront, m_leftrear, m_rightfront, m_rightrear;
+    private Encoder m_leftEncoder, m_rightEncoder;
     private SpeedControllerGroup m_leftcontroller;
     private SpeedControllerGroup m_rightcontroller;
-    private DifferentialDrive m_drivetrain;
+    private SmartDifferentialDrive m_drivetrain;
     private ADXRS450_Gyro gyro;
-    private BuiltInAccelerometer accelerometer;
+    private BuiltInAccelerometer accelerameter;
 
     public Drivetrain() {
-        m_leftfront = new Talon(RobotMap.leftfront);
-        m_leftrear = new Talon(RobotMap.leftrear);
-        m_rightfront = new Talon(RobotMap.rightfront);
-        m_rightrear = new Talon(RobotMap.rightrear);
+        m_leftEncoder = new Encoder(RobotMap.leftEncoderA, RobotMap.leftEncoderB, false, Encoder.EncodingType.k4X);
+        m_rightEncoder = new Encoder(RobotMap.rightEncoderA, RobotMap.rightEncoderB, false, Encoder.EncodingType.k4X);
+
+        m_leftfront = new SmartSpark(RobotMap.leftfront, m_leftEncoder);
+        m_leftrear = new SmartSpark(RobotMap.leftrear, m_leftEncoder);
+        m_rightfront = new SmartSpark(RobotMap.rightfront, m_rightEncoder);
+        m_rightrear = new SmartSpark(RobotMap.rightrear, m_rightEncoder);
+
         m_leftcontroller = new SpeedControllerGroup(m_leftfront, m_leftrear);
         m_rightcontroller = new SpeedControllerGroup(m_rightfront, m_rightrear);
-        m_drivetrain = new DifferentialDrive(m_leftcontroller, m_rightcontroller);
-        gyro = new ADXRS450_Gyro(RobotMap.gyroChannel);
-        gyro.calibrate();
-        accelerometer = new BuiltInAccelerometer();
 
+        m_drivetrain = new SmartDifferentialDrive(m_leftcontroller, m_rightcontroller);
         m_drivetrain.setSafetyEnabled(false);
         m_drivetrain.setMaxOutput(1);
+
+        gyro = new ADXRS450_Gyro(RobotMap.gyroChannel);
+        gyro.calibrate();
     }
 
     @Override
@@ -36,20 +45,12 @@ public class Drivetrain extends Subsystem {
         setDefaultCommand(new JoystickDrive());
     }
 
-    public void ArcadeDrive(double linearX, double AngularZ, boolean isRevert) {
-        if (isRevert) {
-            m_drivetrain.tankDrive(-(linearX + AngularZ), -(linearX - AngularZ), false);
-        } else {
-            m_drivetrain.tankDrive(linearX + AngularZ, linearX - AngularZ, false);
-        }
+    public void protectedArcadeDrive(double linearX, double angularZ, boolean isRevert) {
+        m_drivetrain.protectedArcadeDrive(linearX, angularZ, isRevert);
     }
 
-    public void TankDrive(double leftSpeed, double rightSpeed, boolean isRevert) {
-        if (isRevert) {
-            m_drivetrain.tankDrive(-leftSpeed, -rightSpeed);
-        } else {
-            m_drivetrain.tankDrive(leftSpeed, rightSpeed);
-        }
+    public void nonProtectArcadeDrive(double linearX, double angularZ, boolean isRevert) {
+        m_drivetrain.nonProtectArcadeDrive(linearX, angularZ, isRevert);
     }
 
     public void stopMotor() {
@@ -69,37 +70,16 @@ public class Drivetrain extends Subsystem {
     }
 
     public void resetEncoders() {
-        //TODO
-        //Complete this method to reset encoders positions
-    }
-
-    public static double ConvertInchestoEncoderCount(double inches) {
-        //TODO
-        //Indicate the correct coefficient to inches
-        return inches * 508;
+        m_leftfront.resetEncoder();
+        m_rightfront.resetEncoder();
     }
 
     public double getAverageEncoderPosition() {
-        //TODO
-        //Replace with real sensor reading
+        double averagePosition = (m_leftfront.getDistance() + m_rightfront.getDistance()) / 2; //unit : meter
         return SmartDashboard.getNumber("FakeDrivetrainEncoder", 0.0);
     }
 
-    public double getAccX(){
-        return accelerometer.getX();
+    public double getAverageSpeed() {
+        return (m_leftfront.getRate() + m_rightfront.getRate()) / 2;
     }
-
-    public double getAccY(){
-        return accelerometer.getY();
-    }
-
-    public double getAccZ(){
-        return accelerometer.getZ();
-    }
-
-    public double getResultantAcceleration(){
-        double accSquare = getAccX()*getAccX() + getAccY()*getAccY() + getAccZ()*getAccZ();
-        return  Math.sqrt(accSquare);
-    }
-
 }

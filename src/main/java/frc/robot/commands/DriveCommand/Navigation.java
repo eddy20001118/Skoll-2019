@@ -20,9 +20,7 @@ public class Navigation extends Command {
 
     @Override
     public void execute() {
-        SmartDashboard.putNumber("linearX", mainExecutor.subscriberNodes.getLinearX());
-        SmartDashboard.putNumber("AngularZ", mainExecutor.subscriberNodes.getAngularZ());
-        Robot.m_drivetrain.ArcadeDrive(mainExecutor.subscriberNodes.getLinearX(),mainExecutor.subscriberNodes.getAngularZ(), false);
+        Robot.m_drivetrain.nonProtectArcadeDrive(mainExecutor.subscriberNodes.getLinearX(),mainExecutor.subscriberNodes.getAngularZ(), false);
     }
 
     @Override

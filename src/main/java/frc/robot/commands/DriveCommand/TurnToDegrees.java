@@ -37,9 +37,7 @@ public class TurnToDegrees extends Command {
 
     @Override
     protected void execute() {
-        SmartDashboard.putNumber("linearX", 0.0);
-        SmartDashboard.putNumber("AngularZ", rotationPIDOutput.getValue());
-        Robot.m_drivetrain.ArcadeDrive(0.0, rotationPIDOutput.getValue(), false);
+        Robot.m_drivetrain.nonProtectArcadeDrive(0.0, rotationPIDOutput.getValue(), false);
     }
 
     @Override
