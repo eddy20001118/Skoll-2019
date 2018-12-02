@@ -25,16 +25,16 @@ public class Drivetrain extends Subsystem {
         m_rightEncoder = new Encoder(RobotMap.rightEncoderA, RobotMap.rightEncoderB, false, Encoder.EncodingType.k4X);
 
         m_leftfront = new SmartSpark(RobotMap.leftfront, m_leftEncoder);
-        m_leftfront.initPID(0.3, 0, 0);
+        m_leftfront.initPID();
 
         m_leftrear = new SmartSpark(RobotMap.leftrear, m_leftEncoder);
-        m_leftrear.initPID(0.3, 0, 0);
+        m_leftrear.initPID();
 
         m_rightfront = new SmartSpark(RobotMap.rightfront, m_rightEncoder);
-        m_rightfront.initPID(0.3, 0, 0);
+        m_rightfront.initPID();
 
         m_rightrear = new SmartSpark(RobotMap.rightrear, m_rightEncoder);
-        m_rightrear.initPID(0.3, 0, 0);
+        m_rightrear.initPID();
 
         m_leftcontroller = new SpeedControllerGroup(m_leftfront, m_leftrear);
         m_rightcontroller = new SpeedControllerGroup(m_rightfront, m_rightrear);

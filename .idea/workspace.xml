@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93052a2c-0ed6-4d47-94f6-9925a827be3f" name="Default Changelist" comment="">
+    <list default="true" id="93052a2c-0ed6-4d47-94f6-9925a827be3f" name="Default Changelist" comment="fix bugs">
+      <change afterPath="$PROJECT_DIR$/images/FRC-ROS-Shuffleboard.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/FRC-ROS-Structure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Roborio-ROS-NetworkTable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator_config/networktables.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wpitools_config/networktables.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wpitools_config/shuffleboard.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRC-ROS-Shuffleboard.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRC-ROS-Structure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Roborio-ROS-NetworkTable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shuffleboard.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDOutputs/PIDOutputImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDOutputs/PIDOutputImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/GyroInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/GyroInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/Physics/SmartDifferentialDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/Physics/SmartDifferentialDrive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/Physics/SmartSpark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/Physics/SmartSpark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/UpperCommand/ElevatorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/UpperCommand/ElevatorCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drivetrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drivetrain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -95,7 +115,19 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Skoll-2019" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Skoll-2019" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="snobotsimulator" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Skoll-2019" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -113,57 +145,7 @@
     <favorites_list name="Skoll-2019" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drivetrain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
-              <caret line="52" column="70" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
-              <folding>
-                <element signature="e#2320#2321#0" expanded="true" />
-                <element signature="e#2360#2361#0" expanded="true" />
-                <element signature="method#getHeading#0;class#Drivetrain#0" />
-                <element signature="method#resetEncoders#0;class#Drivetrain#0" />
-                <element signature="method#getAverageEncoderPosition#0;class#Drivetrain#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/Physics/SmartDifferentialDrive.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-384">
-              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/JoystickDrive.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -176,6 +158,8 @@
     <findStrings>
       <find>start</find>
       <find>pidGet</find>
+      <find>out</find>
+      <find>gradle</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,6 +182,19 @@
         </map>
       </branch-storage>
     </favorite-branches>
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -209,7 +206,6 @@
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/NodesExecutor/ExecuteMainNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/NodesExecutor/MainNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/RosTemplate/TP_Publisher.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Publishers/SpeedPublisher.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/MainNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/PublisherNode.java" />
@@ -220,30 +216,31 @@
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/PublisherNodes.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/ROSFRC.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/PIDOutputImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDOutputs/PIDOutputImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/UpperCommand/Elevator.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/TeleopGroup.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/ElevatorEncoderInput.java" />
         <option value="$PROJECT_DIR$/simulator_config/simulator_config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/OI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/UpperCommand/ElevatorCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/SubscriberNodes.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/JoystickInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/DriveTrainEncodersInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/GyroInput.java" />
         <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/AutoGroup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Elevator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/Robot.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/Physics/SmartSpark.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drivetrain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/JoystickDrive.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/Navigation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/DriveTrainEncodersInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/OI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/JoystickDrive.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDOutputs/PIDOutputImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/GyroInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/frc/robot/Physics/SmartDifferentialDrive.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Elevator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/UpperCommand/ElevatorCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/Robot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drivetrain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/Physics/SmartSpark.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -259,10 +256,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1121" />
-    <option name="y" value="122" />
-    <option name="width" value="1100" />
-    <option name="height" value="1062" />
+    <option name="x" value="436" />
+    <option name="y" value="111" />
+    <option name="width" value="1445" />
+    <option name="height" value="1218" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -272,7 +269,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,118 +302,12 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="robot" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot" type="462c0819:PsiDirectoryNode" />
-              <item name="CommandGroups" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-              <item name="DriveCommand" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-              <item name="UpperCommand" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot" type="462c0819:PsiDirectoryNode" />
-              <item name="Physics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot" type="462c0819:PsiDirectoryNode" />
-              <item name="PID" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot" type="462c0819:PsiDirectoryNode" />
-              <item name="PID" type="462c0819:PsiDirectoryNode" />
-              <item name="PIDOutputs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot" type="462c0819:PsiDirectoryNode" />
-              <item name="PID" type="462c0819:PsiDirectoryNode" />
-              <item name="PIDSources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Skoll-2019" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="robot" type="462c0819:PsiDirectoryNode" />
-              <item name="subsystems" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: edu.wpi.first.wpilibj:wpilibj-java:2019.1.1-beta-2" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: edu.wpi.first.wpilibj:wpilibj-java:2019.1.1-beta-2" type="70bed36:NamedLibraryElementNode" />
-              <item name="wpilibj-java-2019.1.1-beta-2.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Skoll-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: edu.wpi.first.wpilibj:wpilibj-java:2019.1.1-beta-2" type="70bed36:NamedLibraryElementNode" />
-              <item name="wpilibj-java-2019.1.1-beta-2.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="wpilibj" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -444,6 +334,25 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.Skoll-2019 [runJavaSnobotSim]">
+    <configuration name="Skoll-2019 [OutlineViewer]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="OutlineViewer" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Skoll-2019 [ShuffleBoard]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -463,7 +372,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Skoll-2019 [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Skoll-2019 [riolog]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -474,7 +383,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="jar" />
+            <option value="riolog" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -501,7 +410,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Skoll-2019 [simulateExternalJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Skoll-2019 [snobotSimUnzipsnobotSimJavaNative]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -512,26 +421,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="simulateExternalJava" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Skoll-2019 [simulateJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="simulateJava" />
+            <option value="snobotSimUnzipsnobotSimJavaNative" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -542,17 +432,17 @@
     <list>
       <item itemvalue="Gradle.Skoll-2019 [runJavaSnobotSim]" />
       <item itemvalue="Gradle.Skoll-2019 [ShuffleBoard]" />
-      <item itemvalue="Gradle.Skoll-2019 [jar]" />
-      <item itemvalue="Gradle.Skoll-2019 [simulateJava]" />
-      <item itemvalue="Gradle.Skoll-2019 [simulateExternalJava]" />
+      <item itemvalue="Gradle.Skoll-2019 [OutlineViewer]" />
+      <item itemvalue="Gradle.Skoll-2019 [snobotSimUnzipsnobotSimJavaNative]" />
+      <item itemvalue="Gradle.Skoll-2019 [riolog]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Skoll-2019 [runJavaSnobotSim]" />
-        <item itemvalue="Gradle.Skoll-2019 [simulateExternalJava]" />
-        <item itemvalue="Gradle.Skoll-2019 [simulateJava]" />
-        <item itemvalue="Gradle.Skoll-2019 [jar]" />
         <item itemvalue="Gradle.Skoll-2019 [ShuffleBoard]" />
+        <item itemvalue="Gradle.Skoll-2019 [riolog]" />
+        <item itemvalue="Gradle.Skoll-2019 [snobotSimUnzipsnobotSimJavaNative]" />
+        <item itemvalue="Gradle.Skoll-2019 [OutlineViewer]" />
       </list>
     </recent_temporary>
   </component>
@@ -596,6 +486,9 @@
       <workItem from="1543492327679" duration="7250000" />
       <workItem from="1543530442595" duration="9823000" />
       <workItem from="1543618606578" duration="4558000" />
+      <workItem from="1543664919026" duration="12133000" />
+      <workItem from="1543711270468" duration="1234000" />
+      <workItem from="1543753504207" duration="3050000" />
     </task>
     <task id="LOCAL-00001" summary="add pid subsystem support">
       <created>1543015363636</created>
@@ -681,11 +574,25 @@
       <option name="project" value="LOCAL" />
       <updated>1543622561037</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update">
+      <created>1543665094171</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1543665094171</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix bugs">
+      <created>1543682093195</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1543682093196</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101660000" />
+    <option name="totallyTimeSpent" value="118077000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -697,10 +604,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="2182" height="1402" extended-state="6" />
-    <editor active="true" />
+    <frame x="-11" y="-11" width="2182" height="1462" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49483353" visible="true" weight="0.25286806" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49483353" visible="true" weight="0.25956023" />
       <window_info id="Structure" order="1" sideWeight="0.5051665" side_tool="true" weight="0.25764817" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -710,12 +616,12 @@
       <window_info id="Gradle" order="7" weight="0.2543021" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32928804" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29530746" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2939815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.499522" weight="0.32847896" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32847896" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3279321" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.499522" weight="0.32847896" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500478" side_tool="true" weight="0.32847896" />
@@ -836,7 +742,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="wpi2019" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -862,6 +768,16 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="old-master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="wpi2019" />
                 </option>
               </RecentGroup>
@@ -884,216 +800,21 @@
     <MESSAGE value="add a pid command for upper motor. Optimize shuffleboard display." />
     <MESSAGE value="update README.md" />
     <MESSAGE value="test with 2019 libs, snobotsim" />
-    <MESSAGE value="fix bugs" />
     <MESSAGE value="ready to add CTRE phoenix support" />
     <MESSAGE value="test acceleration protect, add spark builtin pid control" />
-    <option name="LAST_COMMIT_MESSAGE" value="test acceleration protect, add spark builtin pid control" />
+    <MESSAGE value="update" />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/smartdashboard/SendableChooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1565">
-          <caret line="100" column="41" lean-forward="true" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/PIDController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4352">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/PublisherNodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/ROS/MainExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/runShuffleBoard.bat" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/IterativeRobotBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="271" selection-start-line="271" selection-end-line="271" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulator_config/joystick_config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulator_config/simulator_config.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulator_config/simulator_config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.hal/hal-java/2019.1.1-beta-1/761c5e2f5da161855a0928b3462db8b054575d4d/hal-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/hal/AccelerometerJNI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/BuiltInAccelerometer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-          <folding>
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/ADXRS450_Gyro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="103" column="28" lean-forward="true" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/smartdashboard/SmartDashboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7130">
-          <caret line="280" column="34" selection-start-line="280" selection-start-column="34" selection-end-line="280" selection-end-column="34" />
-          <folding>
-            <element signature="e#9001#9002#0" expanded="true" />
-            <element signature="e#9055#9056#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/Preferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1550">
-          <caret line="64" column="43" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/ROS/Nodes/SubscriberNodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulator_config/networktables.ini">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulator_config/networktables.ini.bak">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/Encoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2635">
-          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/drive/Vector2d.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#1809#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kauailabs.navx.frc/navx-java/3.1.336/724cfcafedf9ad264c557474ef6b6fdacb31967f/navx-java-3.1.336.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1860" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/JoystickInput.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/GyroInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/TeleopGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/ElevatorEncoderInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/command/CommandGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-1/784348da96fae15578ff48b1b6921c21c72c5546/wpilibj-java-2019.1.1-beta-1-sources.jar!/edu/wpi/first/wpilibj/command/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="460" column="11" selection-start-line="460" selection-start-column="11" selection-end-line="460" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="248">
-            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1120,16 +841,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/Robot.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/Spark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+        <state relative-caret-position="279">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/OI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="961">
+          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+          <folding>
+            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+            <element signature="e#1517#1518#0" expanded="true" />
+            <element signature="e#1661#1662#0" expanded="true" />
+            <element signature="e#1714#1715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/TeleopGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/DriveTrainEncodersInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/ElevatorEncoderInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/CommandGroups/AutoGroup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
+        <state relative-caret-position="584">
           <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
           <folding>
             <element signature="e#946#947#0" expanded="true" />
@@ -1140,75 +907,203 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/OI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDOutputs/PIDOutputImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="341">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
           <folding>
-            <element signature="e#1661#1662#0" expanded="true" />
-            <element signature="e#1714#1715#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/XboxController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="43" selection-end-column="41" />
+        <state relative-caret-position="432">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDOutputs/PIDOutputImpl.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/command/PrintCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="279">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/PWMSpeedController.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/command/InstantCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        <state relative-caret-position="-1364">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/drive/DifferentialDrive.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/command/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="302" column="82" lean-forward="true" selection-start-line="302" selection-start-column="2" selection-end-line="302" selection-end-column="82" />
+        <state relative-caret-position="-16031">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/Ultrasonic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2650">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/filters/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1240">
+          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+          <folding>
+            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/filters/LinearDigitalFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2311">
+          <caret line="176" column="29" selection-start-line="176" selection-start-column="29" selection-end-line="176" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/Encoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14074">
-          <caret line="503" column="19" selection-start-line="503" selection-start-column="19" selection-end-line="503" selection-end-column="19" />
+        <state relative-caret-position="419">
+          <caret line="465" column="14" selection-start-line="465" selection-start-column="14" selection-end-line="465" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/Spark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/FRC-ROS-Structure.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/DriveTrainEncodersInput.java">
+    <entry file="file://$PROJECT_DIR$/hs_err_pid45284.log" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/interfaces/Accelerometer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/SendableBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/ADXRS450_Gyro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1333">
+          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.hal/hal-java/2019.1.1-beta-2/a9bb7fe714fdeb666f70529ca13cbfd4fcdbccd6/hal-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/hal/AccelerometerJNI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/BuiltInAccelerometer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+          <folding>
+            <element signature="e#1394#1395#0" expanded="true" />
+            <element signature="e#1419#1420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/PWMSpeedController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1009">
+          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/PID/PIDSources/GyroInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/smartdashboard/SmartDashboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="119" column="34" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
+          <folding>
+            <element signature="e#4090#4091#0" expanded="true" />
+            <element signature="e#4126#4127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="961">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Elevator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="81">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/wpilibj-java/2019.1.1-beta-2/7ef0cb0a7e738ef950e62e3f2b8e7d82372d00d7/wpilibj-java-2019.1.1-beta-2-sources.jar!/edu/wpi/first/wpilibj/drive/DifferentialDrive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="145" column="14" selection-start-line="145" selection-start-column="14" selection-end-line="145" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/Physics/SmartDifferentialDrive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#nonProtectArcadeDrive#0;class#SmartDifferentialDrive#0" />
+            <element signature="method#accelerationTrigger#0;class#SmartDifferentialDrive#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/networktables.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulator_config/networktables.ini.bak">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulator_config/networktables.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1217,20 +1112,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/UpperCommand/ElevatorCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1333">
-          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+        <state relative-caret-position="496">
+          <caret line="16" column="64" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1762#1763#0" expanded="true" />
-            <element signature="e#1790#1791#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/Physics/SmartSpark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="248">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1239,8 +1132,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="310">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1249,61 +1142,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/TurnToDegrees.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+        <state relative-caret-position="589">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/Navigation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/JoystickDrive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="651">
+          <caret line="23" column="133" selection-start-line="23" selection-start-column="133" selection-end-line="23" selection-end-column="133" />
+          <folding>
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1167#1168#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/DriveToDistance.java">
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.project">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="673">
+          <caret line="149" column="21" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand/Navigation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drivetrain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="52" column="70" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
+        <state relative-caret-position="403">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding>
-            <element signature="e#2320#2321#0" expanded="true" />
-            <element signature="e#2360#2361#0" expanded="true" />
-            <element signature="method#getHeading#0;class#Drivetrain#0" />
+            <element signature="method#Drivetrain#0;class#Drivetrain#0" />
             <element signature="method#resetEncoders#0;class#Drivetrain#0" />
-            <element signature="method#getAverageEncoderPosition#0;class#Drivetrain#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frc/robot/Physics/SmartDifferentialDrive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-384">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/.wpilib/wpilib_preferences.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/gradle.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="279">
+            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

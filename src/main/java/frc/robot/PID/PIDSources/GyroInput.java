@@ -5,7 +5,6 @@ import edu.wpi.first.wpilibj.PIDSourceType;
 import frc.robot.Robot;
 
 public class GyroInput implements PIDSource {
-    //TODO find out what is pidSourceType
     private PIDSourceType pidSourceType = PIDSourceType.kRate;
 
     public GyroInput() {

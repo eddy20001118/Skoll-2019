@@ -6,13 +6,19 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.PID.PIDOutputs.PIDOutputImpl;
 import frc.robot.PID.PIDSources.ElevatorEncoderInput;
 import frc.robot.Robot;
+import frc.robot.RobotMap;
 
 public class ElevatorCommand extends Command {
     private PIDOutputImpl speedPIDOutput = new PIDOutputImpl();
     private PIDController encoderPIDController = null;
 
     private PIDController createEncoderPIDController(double setPoint) {
-        PIDController newPIDController = new PIDController(.3, .01, .01, new ElevatorEncoderInput(), speedPIDOutput);
+        PIDController newPIDController = new PIDController(
+                RobotMap.PREFERENCES.getDouble("ElevatorKp",0.3),
+                RobotMap.PREFERENCES.getDouble("ElevatorKi",0.1),
+                RobotMap.PREFERENCES.getDouble("ElevatorKd",0.1),
+                new ElevatorEncoderInput(),
+                speedPIDOutput);
         newPIDController.setInputRange(0.0, 200.0);
         newPIDController.setOutputRange(-0.5, 0.5);
         newPIDController.setSetpoint(setPoint);

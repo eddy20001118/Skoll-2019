@@ -126,7 +126,7 @@
               "_title": "SmartDashboard/ElevatorCommand"
             }
           },
-          "6,4": {
+          "8,4": {
             "size": [
               1,
               1
@@ -140,7 +140,7 @@
               "Visuals/Show value": true
             }
           },
-          "5,4": {
+          "7,4": {
             "size": [
               1,
               1
@@ -179,23 +179,11 @@
           "7,0": {
             "size": [
               2,
-              1
-            ],
-            "content": {
-              "_type": "Robot Preferences",
-              "_source0": "network_table:///Preferences",
-              "_title": "Preferences",
-              "Miscellaneous/Show search box": true
-            }
-          },
-          "7,1": {
-            "size": [
-              2,
               4
             ],
             "content": {
               "_type": "List Layout",
-              "_title": "List Layout",
+              "_title": "Fake Sensor",
               "Layout/Label position": "BOTTOM",
               "_children": [
                 {
@@ -297,6 +285,18 @@
               "_source0": "network_table:///SmartDashboard/DrivetrainEncoder",
               "_title": "/SmartDashboard/DrivetrainEncoder"
             }
+          },
+          "3,0": {
+            "size": [
+              5,
+              5
+            ],
+            "content": {
+              "_type": "Robot Preferences",
+              "_source0": "network_table:///Preferences",
+              "_title": "/Preferences",
+              "Miscellaneous/Show search box": true
+            }
           }
         }
       }
@@ -306,6 +306,6 @@
     "x": -7.333333492279053,
     "y": -7.333333492279053,
     "width": 1454.6666259765625,
-    "height": 934.6666870117188
+    "height": 974.6666870117188
   }
 }

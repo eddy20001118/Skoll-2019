@@ -1,5 +1,6 @@
 package frc.robot;
 
+import edu.wpi.first.wpilibj.Preferences;
 import edu.wpi.first.wpilibj.SPI;
 
 import java.net.URI;
@@ -7,6 +8,7 @@ import java.net.URI;
 
 public class RobotMap {
     private RobotMap() {
+
     }
 
     public final static URI ROSMASTER = URI.create("http://DESKTOP-03QGMNB:11311/");
@@ -18,5 +20,5 @@ public class RobotMap {
     public final static SPI.Port gyroChannel = SPI.Port.kOnboardCS0;
     public final static int leftEncoderA = 0, leftEncoderB = 1;
     public final static int rightEncoderA = 2, rightEncoderB = 3;
-
+    public final static Preferences PREFERENCES = Preferences.getInstance();
 }

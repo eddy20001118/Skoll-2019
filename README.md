@@ -15,18 +15,18 @@ All code are tested by using SnobotSimulatorPlugin 2019.0.0 with Wpi-JNI(Java Na
 ## FRC-ROS Project Structure
 The project structure is shown below. This structure diagram mainly shows the structure about autonomous navigation, introducing how ROS and Roborio cooperate.
 
-![image](https://github.com/eddy20001118/Skoll-2019/blob/master/FRC-ROS-Structure.png)
+![image](https://github.com/eddy20001118/Skoll-2019/blob/master/images/FRC-ROS-Structure.png)
 
 ## FRC-ROS Shuffleboard preview
 Shuffleboard is a useful tool in FRC competition used to visualize your code(displaying important information and widgets). In FRC, all data (including widgets in shuffleboard) are pulished on NetworkTable server which can be accessed by clients running on different computers. So, in shuffleboard you can not only view the data pulished in left panel, but also display them as widgets in right panel. You can also display the data from ROS(see next). The diagram below gives an example:
 
-![image](https://github.com/eddy20001118/Skoll-2019/blob/master/FRC-ROS-Shuffleboard.PNG)
+![image](https://github.com/eddy20001118/Skoll-2019/blob/master/images/FRC-ROS-Shuffleboard.PNG)
 
 ## Choosing a way to transmit data
 There are actually two ways to transmit data between **ROS**, **Roborio**, **Driverstation computer**. If you want to transmit the data between ROS and Roborio that required high real-time level, for example, "drivetrain speed" data published in "cmd_vel" topic in ROS, you need to subscribe them on roborio by using rosjava subscriber, this method allows roborio and ROS to connect directly through radio (OM5P-AC router). Networktable server is usually running on driverstation computer and may cause delay in the competition. So, if you just want to transmit data about Robot/ROS status data, you can directly send it by using networktable in ROS.
 
 <div align="center"> 
-    <img src="https://github.com/eddy20001118/Skoll-2019/blob/master/Roborio-ROS-NetworkTable.png"/>
+    <img src="https://github.com/eddy20001118/Skoll-2019/blob/master/images/Roborio-ROS-NetworkTable.png"/>
 </div>
 
 ### For ROS-NetworkTable with C++

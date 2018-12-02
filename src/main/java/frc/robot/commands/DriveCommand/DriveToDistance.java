@@ -7,6 +7,7 @@ import frc.robot.PID.PIDOutputs.PIDOutputImpl;
 import frc.robot.PID.PIDSources.DriveTrainEncodersInput;
 import frc.robot.PID.PIDSources.GyroInput;
 import frc.robot.Robot;
+import frc.robot.RobotMap;
 
 public class DriveToDistance extends Command {
     private double TargetDistance; //unit : meter
@@ -18,7 +19,12 @@ public class DriveToDistance extends Command {
     private PIDController encoderPIDController = null;
 
     private PIDController createEncoderPIDController() {
-        PIDController newPIDController = new PIDController(.03, .01, .01, new DriveTrainEncodersInput(), speedPIDOutput);
+        PIDController newPIDController = new PIDController(
+                RobotMap.PREFERENCES.getDouble("DrivetrainEncoderKp",0.3),
+                RobotMap.PREFERENCES.getDouble("DrivetrainEncoderKi",0.1),
+                RobotMap.PREFERENCES.getDouble("DrivetrainEncoderKd",0.1),
+                new DriveTrainEncodersInput(),
+                speedPIDOutput);
 
         newPIDController.setInputRange(0,200);
         newPIDController.setOutputRange(-0.5, 0.5);
@@ -31,7 +37,12 @@ public class DriveToDistance extends Command {
     }
 
     private PIDController createAnglePIDController() {
-        PIDController newPIDController = new PIDController(.03, .01, .01, new GyroInput(), rotationPIDOutput);
+        PIDController newPIDController = new PIDController(
+                RobotMap.PREFERENCES.getDouble("Gyro1Kp",0.3),
+                RobotMap.PREFERENCES.getDouble("Gyro1Ki",0.1),
+                RobotMap.PREFERENCES.getDouble("Gyro1Kd",0.1),
+                new GyroInput(),
+                rotationPIDOutput);
 
         newPIDController.setInputRange(0, 360);
         newPIDController.setOutputRange(-0.5, 0.5);

@@ -12,7 +12,6 @@ public class PIDOutputImpl implements PIDOutput {
 
     @Override
     public void pidWrite(double output) {
-        // TODO Auto-generated method stub
         value = output;
     }
 

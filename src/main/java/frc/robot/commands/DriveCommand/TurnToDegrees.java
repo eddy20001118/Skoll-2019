@@ -6,16 +6,23 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.PID.PIDOutputs.PIDOutputImpl;
 import frc.robot.PID.PIDSources.GyroInput;
 import frc.robot.Robot;
+import frc.robot.RobotMap;
 
 public class TurnToDegrees extends Command {
     private double TargetAngle;
     private PIDOutputImpl rotationPIDOutput = new PIDOutputImpl();
     private PIDController anglePIDController = null;
     private GyroInput gyroInput = new GyroInput();
-    private PIDController createAnglePIDController() {
-        PIDController newPIDController = new PIDController(.03, .01, .01, gyroInput, rotationPIDOutput);
 
-        newPIDController.setInputRange(0,360);
+    private PIDController createAnglePIDController() {
+        PIDController newPIDController = new PIDController(
+                RobotMap.PREFERENCES.getDouble("Gyro2Kp", 0.3),
+                RobotMap.PREFERENCES.getDouble("Gyro2Kp", 0.1),
+                RobotMap.PREFERENCES.getDouble("Gyro2Kp", 0.1),
+                gyroInput,
+                rotationPIDOutput);
+
+        newPIDController.setInputRange(0, 360);
         newPIDController.setOutputRange(-0.5, 0.5);
         newPIDController.setSetpoint(TargetAngle);
         newPIDController.setAbsoluteTolerance(0.01);
